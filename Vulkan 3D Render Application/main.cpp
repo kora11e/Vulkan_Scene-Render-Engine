@@ -7,6 +7,7 @@
 #include <stdexcept>
 #include <cstdlib>
 #include <memory>
+#include <vector>
 
 const uint32_t WIDTH = 800;
 const uint32_t HEIGHT = 600;
@@ -28,6 +29,19 @@ private:
     void initVulkan() {
         createInstance();
     }
+
+    void extensionCheck() {
+        uint32_t extensionCount = 0;
+        vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, nullptr);
+        std::vector<VkExtensionProperties> extensions(extensionCount);
+        vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, extensions.data());
+
+        std::cout << "available extensions:\n";
+
+        for (const auto& extension : extensions) {
+            std::cout << '\t' << extension.extensionName << '\n';
+        }
+    };
 
     void createInstance() {
         VkApplicationInfo appInfo{};
@@ -65,8 +79,8 @@ private:
     }
 
     void cleanup() {
+        vkDestroyInstance(instance, nullptr);
         glfwDestroyWindow(window);
-
         glfwTerminate();
     }
 

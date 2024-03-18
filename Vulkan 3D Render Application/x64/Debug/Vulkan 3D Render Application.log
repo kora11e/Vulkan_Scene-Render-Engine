@@ -13,3 +13,4 @@ C:\Users\X\Documents\Visual Studio 2019\Libraries\glfw-3.4.bin.WIN64\include\GLF
 C:\Users\X\Documents\Visual Studio 2019\Libraries\glfw-3.4.bin.WIN64\include\GLFW\glfw3native.h(225,1): error C2086: 'int GLFWAPI': redefinition
 C:\Users\X\Documents\Visual Studio 2019\Libraries\glfw-3.4.bin.WIN64\include\GLFW\glfw3native.h(182): message : see declaration of 'GLFWAPI'
 C:\Users\X\Documents\Visual Studio 2019\Libraries\glfw-3.4.bin.WIN64\include\GLFW\glfw3native.h(225,9): error C2146: syntax error: missing ';' before identifier 'HWND'
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\main.cpp(129): fatal error C1075: '{': no matching token found

@@ -1,2 +1,2 @@
 ﻿  main.cpp
-  Vulkan 3D Render Application.vcxproj -> C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\x64\Debug\Vulkan 3D Render Application.exe
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\main.cpp(106,26): error C2086: 'std::vector<VkFence,std::allocator<VkFence>> HelloTriangleApplication::inFlightFences': redefinition

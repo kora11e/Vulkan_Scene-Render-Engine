@@ -1,2 +1,14 @@
 ﻿  main.cpp
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\main.cpp(5,386): warning C4244: 'argument': conversion from 'double' to 'f', possible loss of data
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\main.cpp(5,706): warning C4244: 'argument': conversion from 'int' to 'f', possible loss of data
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\main.cpp(5,696): warning C4244: 'argument': conversion from 'i' to 'f', possible loss of data
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\main.cpp(5,772): warning C4244: 'initializing': conversion from 'double' to 'f', possible loss of data
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\main.cpp(5,944): warning C4305: 'argument': truncation from 'double' to 'f'
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\main.cpp(5,932): warning C4244: 'argument': conversion from 'double' to 'f', possible loss of data
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\main.cpp(5,1081): warning C4244: 'initializing': conversion from 'double' to 'f', possible loss of data
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\main.cpp(5,1132): warning C4305: 'argument': truncation from 'double' to 'f'
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\main.cpp(5,1209): warning C4244: 'argument': conversion from 'double' to 'f', possible loss of data
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\main.cpp(5,1319): warning C4305: 'argument': truncation from 'double' to 'f'
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\main.cpp(5,1487): warning C4244: 'argument': conversion from 'double' to 'f', possible loss of data
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\main.cpp(5,1509): warning C4244: 'argument': conversion from 'double' to 'f', possible loss of data
   Vulkan 3D Render Application.vcxproj -> C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\x64\Debug\Vulkan 3D Render Application.exe

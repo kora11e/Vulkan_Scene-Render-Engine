@@ -1,0 +1,4546 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1050,
+                  "startColumn": 24,
+                  "endLine": 1050,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__malloc_mad2@@YAPEAXHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1050,
+                  "startColumn": 24,
+                  "endLine": 1050,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__malloc_mad2@@YAPEAXHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1057,
+                  "startColumn": 24,
+                  "endLine": 1057,
+                  "endColumn": 32
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__malloc_mad3@@YAPEAXHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1057,
+                  "startColumn": 24,
+                  "endLine": 1057,
+                  "endColumn": 28
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__malloc_mad3@@YAPEAXHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1057,
+                  "startColumn": 24,
+                  "endLine": 1057,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__malloc_mad3@@YAPEAXHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1064,
+                  "startColumn": 24,
+                  "endLine": 1064,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__malloc_mad4@@YAPEAXHHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1064,
+                  "startColumn": 24,
+                  "endLine": 1064,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__malloc_mad4@@YAPEAXHHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1064,
+                  "startColumn": 24,
+                  "endLine": 1064,
+                  "endColumn": 28
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__malloc_mad4@@YAPEAXHHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1064,
+                  "startColumn": 24,
+                  "endLine": 1064,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__malloc_mad4@@YAPEAXHHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1211,
+                  "startColumn": 45,
+                  "endLine": 1211,
+                  "endColumn": 53
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__convert_8_to_16@@YAPEAGPEAEHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1230,
+                  "startColumn": 32,
+                  "endLine": 1230,
+                  "endColumn": 42
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__vertical_flip@@YAXPEAXHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1230,
+                  "startColumn": 32,
+                  "endLine": 1230,
+                  "endColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__vertical_flip@@YAXPEAXHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1769,
+                  "startColumn": 36,
+                  "endLine": 1769,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__convert_format@@YAPEAEPEAEHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1769,
+                  "startColumn": 36,
+                  "endLine": 1769,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__convert_format@@YAPEAEPEAEHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1770,
+                  "startColumn": 36,
+                  "endLine": 1770,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__convert_format@@YAPEAEPEAEHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1770,
+                  "startColumn": 36,
+                  "endLine": 1770,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__convert_format@@YAPEAEPEAEHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1819,
+                  "startColumn": 41,
+                  "endLine": 1819,
+                  "endColumn": 60
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__convert_format16@@YAPEAGPEAGHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1819,
+                  "startColumn": 41,
+                  "endLine": 1819,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__convert_format16@@YAPEAGPEAGHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1819,
+                  "startColumn": 41,
+                  "endLine": 1819,
+                  "endColumn": 52
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__convert_format16@@YAPEAGPEAGHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1826,
+                  "startColumn": 35,
+                  "endLine": 1826,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__convert_format16@@YAPEAGPEAGHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1826,
+                  "startColumn": 35,
+                  "endLine": 1826,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__convert_format16@@YAPEAGPEAGHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1827,
+                  "startColumn": 35,
+                  "endLine": 1827,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__convert_format16@@YAPEAGPEAGHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 1827,
+                  "startColumn": 35,
+                  "endLine": 1827,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__convert_format16@@YAPEAGPEAGHHII@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3021,
+                  "startColumn": 53,
+                  "endLine": 3021,
+                  "endColumn": 81
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3052,
+                  "startColumn": 62,
+                  "endLine": 3052,
+                  "endColumn": 92
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 2966,
+                  "startColumn": 57,
+                  "endLine": 2966,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 2966,
+                  "startColumn": 57,
+                  "endLine": 2966,
+                  "endColumn": 75
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 2966,
+                  "startColumn": 79,
+                  "endLine": 2966,
+                  "endColumn": 81
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 2994,
+                  "startColumn": 66,
+                  "endLine": 2994,
+                  "endColumn": 84
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3089,
+                  "startColumn": 53,
+                  "endLine": 3089,
+                  "endColumn": 81
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__jpeg_finish@@YAXPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3091,
+                  "startColumn": 57,
+                  "endLine": 3091,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__jpeg_finish@@YAXPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3091,
+                  "startColumn": 57,
+                  "endLine": 3091,
+                  "endColumn": 75
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__jpeg_finish@@YAXPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3091,
+                  "startColumn": 79,
+                  "endLine": 3091,
+                  "endColumn": 81
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__jpeg_finish@@YAXPEAUstbi__jpeg@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3586,
+                  "startColumn": 43,
+                  "endLine": 3586,
+                  "endColumn": 45
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__resample_row_hv_2_simd@@YAPEAEPEAE00HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3903,
+                  "startColumn": 60,
+                  "endLine": 3903,
+                  "endColumn": 74
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?load_jpeg_image@@YAPEAEPEAUstbi__jpeg@@PEAH11H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3926,
+                  "startColumn": 34,
+                  "endLine": 3926,
+                  "endColumn": 52
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?load_jpeg_image@@YAPEAEPEAUstbi__jpeg@@PEAH11H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 3926,
+                  "startColumn": 34,
+                  "endLine": 3926,
+                  "endColumn": 42
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?load_jpeg_image@@YAPEAEPEAUstbi__jpeg@@PEAH11H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4738,
+                  "startColumn": 36,
+                  "endLine": 4738,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__create_png_image_raw@@YAHPEAUstbi__png@@PEAEIHIIHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4739,
+                  "startColumn": 38,
+                  "endLine": 4739,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__create_png_image_raw@@YAHPEAUstbi__png@@PEAEIHIIHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4740,
+                  "startColumn": 32,
+                  "endLine": 4740,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__create_png_image_raw@@YAHPEAUstbi__png@@PEAEIHIIHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4823,
+                  "startColumn": 31,
+                  "endLine": 4823,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__create_png_image_raw@@YAHPEAUstbi__png@@PEAEIHIIHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4891,
+                  "startColumn": 31,
+                  "endLine": 4891,
+                  "endColumn": 49
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4891,
+                  "startColumn": 31,
+                  "endLine": 4891,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4891,
+                  "startColumn": 61,
+                  "endLine": 4891,
+                  "endColumn": 67
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4892,
+                  "startColumn": 33,
+                  "endLine": 4892,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4892,
+                  "startColumn": 33,
+                  "endLine": 4892,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 4892,
+                  "startColumn": 33,
+                  "endLine": 4892,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5712,
+                  "startColumn": 35,
+                  "endLine": 5712,
+                  "endColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__bmp_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5712,
+                  "startColumn": 35,
+                  "endLine": 5712,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__bmp_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5713,
+                  "startColumn": 31,
+                  "endLine": 5713,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__bmp_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5713,
+                  "startColumn": 31,
+                  "endLine": 5713,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__bmp_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5713,
+                  "startColumn": 31,
+                  "endLine": 5713,
+                  "endColumn": 42
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__bmp_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26819",
+          "message": {
+            "text": "Unannotated fallthrough between switch labels (es.78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5744,
+                  "startColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__tga_get_comp@@YAHHHPEAH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5933,
+                  "startColumn": 40,
+                  "endLine": 5933,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__tga_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 5933,
+                  "startColumn": 40,
+                  "endLine": 5933,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__tga_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6201,
+                  "startColumn": 38,
+                  "endLine": 6201,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__psd_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6201,
+                  "startColumn": 38,
+                  "endLine": 6201,
+                  "endColumn": 42
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__psd_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6283,
+                  "startColumn": 58,
+                  "endLine": 6283,
+                  "endColumn": 60
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__psd_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6295,
+                  "startColumn": 42,
+                  "endLine": 6295,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__psd_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6420,
+                  "startColumn": 33,
+                  "endLine": 6420,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__pic_load_core@@YAPEAEPEAUstbi__context@@HHPEAHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6420,
+                  "startColumn": 33,
+                  "endLine": 6420,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__pic_load_core@@YAPEAEPEAUstbi__context@@HHPEAHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6524,
+                  "startColumn": 25,
+                  "endLine": 6524,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__pic_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6524,
+                  "startColumn": 25,
+                  "endLine": 6524,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__pic_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6790,
+                  "startColumn": 41,
+                  "endLine": 6790,
+                  "endColumn": 45
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6791,
+                  "startColumn": 48,
+                  "endLine": 6791,
+                  "endColumn": 52
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6799,
+                  "startColumn": 28,
+                  "endLine": 6799,
+                  "endColumn": 32
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6800,
+                  "startColumn": 35,
+                  "endLine": 6800,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6833,
+                  "startColumn": 38,
+                  "endLine": 6833,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6833,
+                  "startColumn": 38,
+                  "endLine": 6833,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6837,
+                  "startColumn": 30,
+                  "endLine": 6837,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6262",
+          "message": {
+            "text": "Function uses '35036' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6960,
+                  "startColumn": 14,
+                  "endLine": 6960,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 6991,
+                  "startColumn": 39,
+                  "endLine": 6991,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7007,
+                  "startColumn": 46,
+                  "endLine": 7007,
+                  "endColumn": 55
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7018,
+                  "startColumn": 29,
+                  "endLine": 7018,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7018,
+                  "startColumn": 29,
+                  "endLine": 7018,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7020,
+                  "startColumn": 33,
+                  "endLine": 7020,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6262",
+          "message": {
+            "text": "Function uses '34980' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7045,
+                  "startColumn": 14,
+                  "endLine": 7045,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__gif_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26819",
+          "message": {
+            "text": "Unannotated fallthrough between switch labels (es.78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7146,
+                  "startColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__hdr_convert@@YAXPEAMPEAEH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26819",
+          "message": {
+            "text": "Unannotated fallthrough between switch labels (es.78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7149,
+                  "startColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__hdr_convert@@YAXPEAMPEAEH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7220,
+                  "startColumn": 42,
+                  "endLine": 7220,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7220,
+                  "startColumn": 42,
+                  "endLine": 7220,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7220,
+                  "startColumn": 65,
+                  "endLine": 7220,
+                  "endColumn": 69
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7277,
+                  "startColumn": 41,
+                  "endLine": 7277,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7277,
+                  "startColumn": 41,
+                  "endLine": 7277,
+                  "endColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7277,
+                  "startColumn": 41,
+                  "endLine": 7277,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+                },
+                "region": {
+                  "startLine": 7277,
+                  "startColumn": 75,
+                  "endLine": 7277,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "The enum type 'VkResult' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 16,
+                  "endLine": 47,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?CreateDebugUtilsMessengerEXT@@YA?AW4VkResult@@PEAUVkInstance_T@@PEBUVkDebugUtilsMessengerCreateInfoEXT@@PEBUVkAllocationCallbacks@@PEAPEAUVkDebugUtilsMessengerEXT_T@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "The enum type 'VkPresentModeKHR' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 443,
+                  "startColumn": 26,
+                  "endLine": 443,
+                  "endColumn": 78
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?createSwapChain@HelloTriangleApplication@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "The enum type 'VkFormat' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 487,
+                  "startColumn": 9,
+                  "endLine": 487,
+                  "endColumn": 45
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?createSwapChain@HelloTriangleApplication@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "The enum type 'VkDynamicState' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 655,
+                  "startColumn": 39,
+                  "endLine": 655,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?createGraphicsPipeline@HelloTriangleApplication@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 729,
+                  "startColumn": 34,
+                  "endLine": 729,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?createTextureImage@HelloTriangleApplication@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 729,
+                  "startColumn": 34,
+                  "endLine": 729,
+                  "endColumn": 45
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?createTextureImage@HelloTriangleApplication@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "The enum type 'VkImageTiling' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 758,
+                  "startColumn": 10,
+                  "endLine": 758,
+                  "endColumn": 10
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?createImage@HelloTriangleApplication@@AEAAXIIW4VkFormat@@W4VkImageTiling@@IIAEAPEAUVkImage_T@@AEAPEAUVkDeviceMemory_T@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "The enum type 'VkImageLayout' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 793,
+                  "startColumn": 10,
+                  "endLine": 793,
+                  "endColumn": 10
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?transitionImageLayout@HelloTriangleApplication@@AEAAXPEAUVkImage_T@@W4VkFormat@@W4VkImageLayout@@2@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'SwapChainSupportDetails::capabilities' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 1,
+                  "endLine": 74,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0SwapChainSupportDetails@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "SwapChainSupportDetails::capabilities"
+          }
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "The enum type 'VkDebugUtilsMessageSeverityFlagBitsEXT' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1417,
+                  "startColumn": 43,
+                  "endLine": 1417,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?debugCallback@HelloTriangleApplication@@CAIW4VkDebugUtilsMessageSeverityFlagBitsEXT@@IPEBUVkDebugUtilsMessengerCallbackDataEXT@@PEAX@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::window' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::window"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::debugMessenger' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::debugMessenger"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::instance' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::instance"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::graphicsQueue' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::graphicsQueue"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::presentQueue' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::presentQueue"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::device' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::device"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::swapChain' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::swapChain"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::surface' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::surface"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::swapChainImageFormat' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::swapChainImageFormat"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::swapChainExtent' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::swapChainExtent"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::renderPass' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::renderPass"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::descriptorSetLayout' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::descriptorSetLayout"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::pipelineLayout' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::pipelineLayout"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::graphicsPipeline' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::graphicsPipeline"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::commandPool' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::commandPool"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::textureImage' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::textureImage"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::textureImageMemory' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::textureImageMemory"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::vertexBuffer' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::vertexBuffer"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::vertexBufferMemory' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::vertexBufferMemory"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::indexBuffer' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::indexBuffer"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::indexBufferMemory' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::indexBufferMemory"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'HelloTriangleApplication::descriptorPool' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+                },
+                "region": {
+                  "startLine": 1422,
+                  "startColumn": 1,
+                  "endLine": 1422,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0HelloTriangleApplication@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "HelloTriangleApplication::descriptorPool"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30154.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00A6C1B0 -il C:\\Users\\X\\AppData\\Local\\Temp\\_CL_7c27690bast -typedil -f main.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930154 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -I C:\\Users\\X\\Documents\\Visual Studio 2019\\Libraries\\glm-master -I C:\\Users\\X\\Documents\\Visual Studio 2019\\Libraries\\stb-master -I C:\\Users\\X\\Documents\\Visual Studio 2019\\Libraries\\glfw-3.4.bin.WIN64\\include -I C:\\VulkanSDK\\1.3.275.0\\Lib -I C:\\Users\\X\\Documents\\Visual Studio 2019\\Libraries\\glfw-3.4.bin.WIN64\\include -I C:\\VulkanSDK\\1.3.275.0\\Include -I C:\\Users\\X\\Documents\\Visual Studio 2019\\Libraries\\stb-master -I C:\\Users\\X\\Documents\\Visual Studio 2019\\Libraries\\glm-master -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -std:c++17 -Fox64\\Debug\\main.obj -Fdx64\\Debug\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory C:\\Users\\X\\Desktop\\Vulkan\\Vulkan_Scene-Render-Scene\\Vulkan 3D Render Application -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Users\\X\\Desktop\\Vulkan\\Vulkan_Scene-Render-Scene\\Vulkan 3D Render Application\\Include\\um -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I C:\\Users\\X\\Desktop\\Vulkan\\Vulkan_Scene-Render-Scene\\Vulkan 3D Render Application\\Include\\um -I C:\\Users\\X\\Desktop\\Vulkan\\Vulkan_Scene-Render-Scene\\Vulkan 3D Render Application\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/X/Documents/Visual Studio 2019/Libraries/stb-master/stb_image.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "731495e5e34eb541e3da79691f30392c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/X/Desktop/Vulkan/Vulkan_Scene-Render-Scene/Vulkan 3D Render Application/main.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "225b089d8999f6d9191737860faee9c6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glfw-3.4.bin.win64/include/glfw/glfw3.h"
+          },
+          "hashes": {
+            "md5": "f474ac3eaad53e255fb9b2f914213f16"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.3.275.0/include/vulkan/vulkan.h"
+          },
+          "hashes": {
+            "md5": "e75cbb4d00e126aabd884bc88c7d9b7d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.3.275.0/include/vulkan/vk_platform.h"
+          },
+          "hashes": {
+            "md5": "1d387cfa2d1989595a1b09ccdc5e620e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.3.275.0/include/vulkan/vulkan_core.h"
+          },
+          "hashes": {
+            "md5": "e1645164befe525bf81101e650fe83c5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.3.275.0/include/vk_video/vulkan_video_codec_h264std.h"
+          },
+          "hashes": {
+            "md5": "58b4d9e9207995f4cc4d84083abcd5cc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.3.275.0/include/vk_video/vulkan_video_codecs_common.h"
+          },
+          "hashes": {
+            "md5": "a34c4bfd22f3d9ae67c37e9fa9660065"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.3.275.0/include/vk_video/vulkan_video_codec_h264std_encode.h"
+          },
+          "hashes": {
+            "md5": "558872c949d7d50fce08952402b00a24"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.3.275.0/include/vk_video/vulkan_video_codec_h265std.h"
+          },
+          "hashes": {
+            "md5": "26817478022a8574b30f0c0d9b2fbcd1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.3.275.0/include/vk_video/vulkan_video_codec_h265std_encode.h"
+          },
+          "hashes": {
+            "md5": "c5f90ade317dac3de5c02751823b4e23"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.3.275.0/include/vk_video/vulkan_video_codec_h264std_decode.h"
+          },
+          "hashes": {
+            "md5": "1ea994c9ed5e9234ee7692d65df33c49"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/vulkansdk/1.3.275.0/include/vk_video/vulkan_video_codec_h265std_decode.h"
+          },
+          "hashes": {
+            "md5": "9fc259c6aaef54492e48b7876bbbb158"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/glm.hpp"
+          },
+          "hashes": {
+            "md5": "4ed478b5e5032cc74b279d994cb8e1c3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/_fixes.hpp"
+          },
+          "hashes": {
+            "md5": "4dfdbc8d1ac5131c9e96eabec8c52c50"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/setup.hpp"
+          },
+          "hashes": {
+            "md5": "3c178dafa861256ef2ba8cda3674e7c5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/simd/platform.h"
+          },
+          "hashes": {
+            "md5": "36eec1f257aba37d04a623cd90571be5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/fwd.hpp"
+          },
+          "hashes": {
+            "md5": "0062418b4a95226df5a758c8c62a08a1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/qualifier.hpp"
+          },
+          "hashes": {
+            "md5": "3467b096cea991f3ea46de9f9e71470d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/vec2.hpp"
+          },
+          "hashes": {
+            "md5": "de8dc4b41d16673a5b83cb63dd29bc61"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_bool2.hpp"
+          },
+          "hashes": {
+            "md5": "6233764c7af33f5407dfe627bb077421"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_vec2.hpp"
+          },
+          "hashes": {
+            "md5": "df47954b88731d6e1407be153acfd2c8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_vec2.inl"
+          },
+          "hashes": {
+            "md5": "d884d26f3b61c50003ebaf2e015cef70"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/compute_vector_relational.hpp"
+          },
+          "hashes": {
+            "md5": "5965f9009e4c65de014c5a33b0cefc64"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_bool2_precision.hpp"
+          },
+          "hashes": {
+            "md5": "1ad7346d197abecfb1a87ee770cc3b58"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_float2.hpp"
+          },
+          "hashes": {
+            "md5": "90760022c36019ffa0b8105f37992ef5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_float2_precision.hpp"
+          },
+          "hashes": {
+            "md5": "f757b628bc85854ba161e1b6cc02793b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_double2.hpp"
+          },
+          "hashes": {
+            "md5": "f86b8daf2c5a15c20adeeda3fdce67f5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_double2_precision.hpp"
+          },
+          "hashes": {
+            "md5": "d71ac88bb1afbaca2d279e869680a163"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_int2.hpp"
+          },
+          "hashes": {
+            "md5": "2c56575f4ae8bf26746033653acfbece"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_int2_sized.hpp"
+          },
+          "hashes": {
+            "md5": "6e97f2b284f0adacdb0484dfc7d38ab7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/scalar_int_sized.hpp"
+          },
+          "hashes": {
+            "md5": "22ce09a2eca291336878993aa7091464"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_uint2.hpp"
+          },
+          "hashes": {
+            "md5": "a800ada5f5b9d08370190ecffc3bf90b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_uint2_sized.hpp"
+          },
+          "hashes": {
+            "md5": "f3a731ed4475a7d97e37ec9a08f42d23"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/scalar_uint_sized.hpp"
+          },
+          "hashes": {
+            "md5": "a907664376c9683e054dafe2e605cebc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/vec3.hpp"
+          },
+          "hashes": {
+            "md5": "d6d7f74f24121bc8189791fb61551b7d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_bool3.hpp"
+          },
+          "hashes": {
+            "md5": "bb0d506a2753f13dd14b17cbf4c62564"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_vec3.hpp"
+          },
+          "hashes": {
+            "md5": "fca7c3e9b31ce092227d7f497789ff1b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_vec3.inl"
+          },
+          "hashes": {
+            "md5": "7abb196af4b2396e7fac74b676dc4e07"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_bool3_precision.hpp"
+          },
+          "hashes": {
+            "md5": "acdc951f407561b15b5009e6ae069397"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_float3.hpp"
+          },
+          "hashes": {
+            "md5": "1d033eafa37c5d1cb2ac0e3fd4b5ff69"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_float3_precision.hpp"
+          },
+          "hashes": {
+            "md5": "356b428a0d7aa0da870de95ff21411a9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_double3.hpp"
+          },
+          "hashes": {
+            "md5": "ae21cf69460e39e2fdb66eb46070b78a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_double3_precision.hpp"
+          },
+          "hashes": {
+            "md5": "2b59a5720847cfa208f1532896018caf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_int3.hpp"
+          },
+          "hashes": {
+            "md5": "0a2486c77ca78ceb6884822860edc894"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_int3_sized.hpp"
+          },
+          "hashes": {
+            "md5": "a78d9243f7ddce663d5c00bfdbe71530"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_uint3.hpp"
+          },
+          "hashes": {
+            "md5": "2121de52b2f29fe3c015f5fadb1c9262"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_uint3_sized.hpp"
+          },
+          "hashes": {
+            "md5": "8081d2fa7ad6d48e6a6aa6951029e952"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/vec4.hpp"
+          },
+          "hashes": {
+            "md5": "199fe0d8889f1c963733fe0d5c406399"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_bool4.hpp"
+          },
+          "hashes": {
+            "md5": "60694c6725fb5ebf4a8572859a33c379"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_vec4.hpp"
+          },
+          "hashes": {
+            "md5": "a081ca3a8ed68d862cf8714a31ea4406"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_vec4.inl"
+          },
+          "hashes": {
+            "md5": "be51931d735e196e5b03a7adf9ed6fe0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_bool4_precision.hpp"
+          },
+          "hashes": {
+            "md5": "9d4c3c4a0324b6a040b07f57afd66b7b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_float4.hpp"
+          },
+          "hashes": {
+            "md5": "c334b6e799decf0d910ae457711745f4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_float4_precision.hpp"
+          },
+          "hashes": {
+            "md5": "c1bd478a2d9e4a0ecf5c38d1c7a5b320"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_double4.hpp"
+          },
+          "hashes": {
+            "md5": "861a5b748198f51b2d7d864334725d6f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_double4_precision.hpp"
+          },
+          "hashes": {
+            "md5": "1459fe6169dcdbce83259bcae91cac6c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_int4.hpp"
+          },
+          "hashes": {
+            "md5": "3e09a9712aaec6337213ee24c4ed7917"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_int4_sized.hpp"
+          },
+          "hashes": {
+            "md5": "c3f8e339cf8168874b8cdd6ab01d3fb4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_uint4.hpp"
+          },
+          "hashes": {
+            "md5": "c70ef59925c1c5bce8e66ce6e0818cc9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/vector_uint4_sized.hpp"
+          },
+          "hashes": {
+            "md5": "fd863e97c52afbc1aba073732238e887"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/mat2x2.hpp"
+          },
+          "hashes": {
+            "md5": "cce2efe7aa13a7680c431ba92213cdc5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double2x2.hpp"
+          },
+          "hashes": {
+            "md5": "132a56fc9e79ac70bf41a734b3946cf6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat2x2.hpp"
+          },
+          "hashes": {
+            "md5": "a2af081dfd805d2ef6db8063bc721398"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat2x2.inl"
+          },
+          "hashes": {
+            "md5": "3fa2966a0d1e6712e8a1819bc1086bd3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/matrix.hpp"
+          },
+          "hashes": {
+            "md5": "fc6159f4f81b511152982a63b31e01ba"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/mat2x3.hpp"
+          },
+          "hashes": {
+            "md5": "ba553c479ad39f24ae6dbc52e00619a4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double2x3.hpp"
+          },
+          "hashes": {
+            "md5": "acd5b730e35792131eeb42ac54f9f03b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat2x3.hpp"
+          },
+          "hashes": {
+            "md5": "4383cad692edd04a2dee02ec7edc36d5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat2x3.inl"
+          },
+          "hashes": {
+            "md5": "1777087e961336300f18ed1e7a68a65a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double2x3_precision.hpp"
+          },
+          "hashes": {
+            "md5": "4703058bc61056b93633df43405410b9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float2x3.hpp"
+          },
+          "hashes": {
+            "md5": "65fe704f6e6548317bfd3b855eb2ec21"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float2x3_precision.hpp"
+          },
+          "hashes": {
+            "md5": "f9223a380be7ec988eccca339a3a559a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/mat2x4.hpp"
+          },
+          "hashes": {
+            "md5": "0456c5df441e4dc091fe1196d9f08a18"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double2x4.hpp"
+          },
+          "hashes": {
+            "md5": "e0dbc040d052ec6b80f7e5da77677045"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat2x4.hpp"
+          },
+          "hashes": {
+            "md5": "06d778f7f0d7e8c4a85ce71320fbe9b8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat2x4.inl"
+          },
+          "hashes": {
+            "md5": "7088b9e68ca45750662ccfd8b2b1d032"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double2x4_precision.hpp"
+          },
+          "hashes": {
+            "md5": "0a6fdc1a7b7d6c09bb6c4491a545f738"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float2x4.hpp"
+          },
+          "hashes": {
+            "md5": "d91cdef487294da522c9fc2327356e76"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float2x4_precision.hpp"
+          },
+          "hashes": {
+            "md5": "868cb14afaac053d11c405542cfe3440"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/mat3x2.hpp"
+          },
+          "hashes": {
+            "md5": "08eae964aa236badac332ffbb0755cd2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double3x2.hpp"
+          },
+          "hashes": {
+            "md5": "ff183ed092d1d1442467b03b052750fc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat3x2.hpp"
+          },
+          "hashes": {
+            "md5": "3c0fc67b1a2fbfaae0e3ad88e58956d1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat3x2.inl"
+          },
+          "hashes": {
+            "md5": "2037e7ec649310875571f7c5f8a798ce"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double3x2_precision.hpp"
+          },
+          "hashes": {
+            "md5": "b7f7e42d61adee966f8bc71778e25249"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float3x2.hpp"
+          },
+          "hashes": {
+            "md5": "2d293ae2e8d9d9c9fd359f258a149d5b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float3x2_precision.hpp"
+          },
+          "hashes": {
+            "md5": "f75b6448aa0f7fa6bf020f2caa79cf6e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/mat3x3.hpp"
+          },
+          "hashes": {
+            "md5": "43a0ac823b3c62f586b52eb0c5ba515f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double3x3.hpp"
+          },
+          "hashes": {
+            "md5": "09044fbcb1e9546e6b13bbc7eb5600ce"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat3x3.hpp"
+          },
+          "hashes": {
+            "md5": "27a713f72c4b2a7e47614e085868fb37"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat3x3.inl"
+          },
+          "hashes": {
+            "md5": "283764cd422cc2cdcaa47c63c9e61406"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double3x3_precision.hpp"
+          },
+          "hashes": {
+            "md5": "8968610e2f7373da2fe58d828b3537c8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float3x3.hpp"
+          },
+          "hashes": {
+            "md5": "35239da0a5ba5207a76bd4a357a38df9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float3x3_precision.hpp"
+          },
+          "hashes": {
+            "md5": "0c82253ed6e74860f7ca6eb2742c7187"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/mat3x4.hpp"
+          },
+          "hashes": {
+            "md5": "4370d98bf647e5d414d70c112b4a266c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double3x4.hpp"
+          },
+          "hashes": {
+            "md5": "c4ab6078d989aa4daae7823790745d32"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat3x4.hpp"
+          },
+          "hashes": {
+            "md5": "e4ca133e33a94bbd97c47e8dc11db4dd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat3x4.inl"
+          },
+          "hashes": {
+            "md5": "32b69ffed4c0f0bb59f5ceacee449108"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double3x4_precision.hpp"
+          },
+          "hashes": {
+            "md5": "fff09f31e39739d417a4d72ffcf59434"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float3x4.hpp"
+          },
+          "hashes": {
+            "md5": "35c58cb48d28910093d5c9891b52e8c7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float3x4_precision.hpp"
+          },
+          "hashes": {
+            "md5": "293a3e92cd38a6093be4dce1e9119cb5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/mat4x2.hpp"
+          },
+          "hashes": {
+            "md5": "2047f4410df56a88cc8d820c7d2ce5c0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double4x2.hpp"
+          },
+          "hashes": {
+            "md5": "e677f7580e742f65433a976e7a51271f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat4x2.hpp"
+          },
+          "hashes": {
+            "md5": "f5695f8051721be62109705d45649538"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat4x2.inl"
+          },
+          "hashes": {
+            "md5": "51c09e286aa9a762d4cfed41edea2703"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double4x2_precision.hpp"
+          },
+          "hashes": {
+            "md5": "d30f3963dbf65d8f404e55a5fca8ab3d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float4x2.hpp"
+          },
+          "hashes": {
+            "md5": "730dc195015782460553b45248d9e7fe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float4x2_precision.hpp"
+          },
+          "hashes": {
+            "md5": "c3fa1e6e33882c39bcbe4d47689e4e6c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/mat4x3.hpp"
+          },
+          "hashes": {
+            "md5": "ef1193825139d08fb77e0370324245e5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double4x3.hpp"
+          },
+          "hashes": {
+            "md5": "1aa1171942a0f912b243fb8f63c36c06"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat4x3.hpp"
+          },
+          "hashes": {
+            "md5": "c962823c0d37eccb1186239c4d7cf87e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat4x3.inl"
+          },
+          "hashes": {
+            "md5": "2fac7a490018d0c6a9e3e1b17c4b7671"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double4x3_precision.hpp"
+          },
+          "hashes": {
+            "md5": "a11d1b7c2b4cea3789533c8ac8e82ef3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float4x3.hpp"
+          },
+          "hashes": {
+            "md5": "f13fe326b5e97b93af916d0652ece102"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float4x3_precision.hpp"
+          },
+          "hashes": {
+            "md5": "d5d0c8f8bb4323707e547c5a6b44ee61"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/mat4x4.hpp"
+          },
+          "hashes": {
+            "md5": "7318e350782b961e2e6d108c766e049a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double4x4.hpp"
+          },
+          "hashes": {
+            "md5": "685be40a13edab9d9c32bfc184ec4460"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat4x4.hpp"
+          },
+          "hashes": {
+            "md5": "b5d7206c3c54f1f1e0b79a5df54d7b25"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_mat4x4.inl"
+          },
+          "hashes": {
+            "md5": "2613ee632f79b09c2e3063bba5ad6699"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double4x4_precision.hpp"
+          },
+          "hashes": {
+            "md5": "527844e1b5d58c2c9c2edfa2b612d0d1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float4x4.hpp"
+          },
+          "hashes": {
+            "md5": "7fa5473ae699ce2a2965e916945d64cd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float4x4_precision.hpp"
+          },
+          "hashes": {
+            "md5": "deb2e0a902af84ab5cae6e44544668e4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/func_matrix.inl"
+          },
+          "hashes": {
+            "md5": "ee48c2256a9cfd72f819dd0772e9e171"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/geometric.hpp"
+          },
+          "hashes": {
+            "md5": "6b54b2b3ec22bfb4e0f65b1054d77718"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/func_geometric.inl"
+          },
+          "hashes": {
+            "md5": "28a8d1cb2b7b3c690cda1164ee8f4db3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/exponential.hpp"
+          },
+          "hashes": {
+            "md5": "d99e8b4841cd03d08c9b47bd252084e3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_vec1.hpp"
+          },
+          "hashes": {
+            "md5": "d209ca9640f831d0ffe01b511da85e41"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_vec1.inl"
+          },
+          "hashes": {
+            "md5": "9fdc771a0e0b91ad1d6d57c982b6bb90"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/func_exponential.inl"
+          },
+          "hashes": {
+            "md5": "755454cbf7822d1dc4723b1df478dc52"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/vector_relational.hpp"
+          },
+          "hashes": {
+            "md5": "e8f062f6785fe689e03b6ecfe173e497"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/func_vector_relational.inl"
+          },
+          "hashes": {
+            "md5": "dcef9d7968003e1330a2a3e69d5b894d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/_vectorize.hpp"
+          },
+          "hashes": {
+            "md5": "9c441a24dd831feae52227615cdea21f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/common.hpp"
+          },
+          "hashes": {
+            "md5": "22a109f71b893b61074615b9c3989f20"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/func_common.inl"
+          },
+          "hashes": {
+            "md5": "870ae5216361b4f67e9947a03109299c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/compute_common.hpp"
+          },
+          "hashes": {
+            "md5": "5c3f610d76b8183a03f434ba28a0cd1a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_double2x2_precision.hpp"
+          },
+          "hashes": {
+            "md5": "b9e5a90f4ad65d09a3fa5f5eb57a56ca"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float2x2.hpp"
+          },
+          "hashes": {
+            "md5": "230598a32fabd32131609f57f5538509"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_float2x2_precision.hpp"
+          },
+          "hashes": {
+            "md5": "40562f3159dc49d847b0a54030bab432"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/trigonometric.hpp"
+          },
+          "hashes": {
+            "md5": "558971545eddad737891d3ad82f8fbab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/func_trigonometric.inl"
+          },
+          "hashes": {
+            "md5": "c4c58df7a54f14aaf671fa14d1f2994e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/packing.hpp"
+          },
+          "hashes": {
+            "md5": "3e5497e128c7deda213ed8765e28842b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/func_packing.inl"
+          },
+          "hashes": {
+            "md5": "f2fef7f9ea746325f34d0b56c987e8dc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_half.hpp"
+          },
+          "hashes": {
+            "md5": "e93438412aa8d6097c9443598725db6a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/type_half.inl"
+          },
+          "hashes": {
+            "md5": "8b78c3cdbd567423f93ee6b9e5e6d776"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/integer.hpp"
+          },
+          "hashes": {
+            "md5": "702a394d0a4ee6873e76f40969aac0d3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/detail/func_integer.inl"
+          },
+          "hashes": {
+            "md5": "558fa73affff0f425725b3379eb052c3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/gtc/matrix_transform.hpp"
+          },
+          "hashes": {
+            "md5": "1ae7c64060379b5a0d820f069e95276f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_projection.hpp"
+          },
+          "hashes": {
+            "md5": "69b5c43d77da677f74164c3b159d3c69"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/gtc/constants.hpp"
+          },
+          "hashes": {
+            "md5": "4da4e3cbc3372511e7a94b0e4498c33d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/scalar_constants.hpp"
+          },
+          "hashes": {
+            "md5": "26cc94b3d0e17c4a6cf9f3ad14734d97"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/scalar_constants.inl"
+          },
+          "hashes": {
+            "md5": "29396ad46d3584ed3ce0d635e39b61e9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/gtc/constants.inl"
+          },
+          "hashes": {
+            "md5": "c56eb6279e177e3f7c02caf19652b874"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_projection.inl"
+          },
+          "hashes": {
+            "md5": "9720f7f769fcf107e55d39cf6a4dd5af"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_clip_space.hpp"
+          },
+          "hashes": {
+            "md5": "019644f768654fb7bbeff808c4c8c093"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_clip_space.inl"
+          },
+          "hashes": {
+            "md5": "61b7bd9f844313c0aaa66e362d9fbce7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_transform.hpp"
+          },
+          "hashes": {
+            "md5": "46e68ce69dfb3f8cf9c2db4c4414b013"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/ext/matrix_transform.inl"
+          },
+          "hashes": {
+            "md5": "d63547e78f86c3a063f2d4ba1c8243d8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/x/documents/visual studio 2019/libraries/glm-master/glm/gtc/matrix_transform.inl"
+          },
+          "hashes": {
+            "md5": "fb7337dd44b2832e07d8ec1326173fec"
+          }
+        }
+      ]
+    }
+  ]
+}

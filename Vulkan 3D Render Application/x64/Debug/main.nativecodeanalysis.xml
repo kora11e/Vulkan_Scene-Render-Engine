@@ -1,0 +1,1724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1050</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__malloc_mad2</FUNCTION>
+    <DECORATED>?stbi__malloc_mad2@@YAPEAXHHH@Z</DECORATED>
+    <FUNCLINE>1047</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1050</LINE>
+      <COLUMN>24</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__malloc_mad2</FUNCTION>
+    <DECORATED>?stbi__malloc_mad2@@YAPEAXHHH@Z</DECORATED>
+    <FUNCLINE>1047</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1057</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__malloc_mad3</FUNCTION>
+    <DECORATED>?stbi__malloc_mad3@@YAPEAXHHHH@Z</DECORATED>
+    <FUNCLINE>1054</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1057</LINE>
+      <COLUMN>26</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__malloc_mad3</FUNCTION>
+    <DECORATED>?stbi__malloc_mad3@@YAPEAXHHHH@Z</DECORATED>
+    <FUNCLINE>1054</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1057</LINE>
+      <COLUMN>24</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__malloc_mad3</FUNCTION>
+    <DECORATED>?stbi__malloc_mad3@@YAPEAXHHHH@Z</DECORATED>
+    <FUNCLINE>1054</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1064</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__malloc_mad4</FUNCTION>
+    <DECORATED>?stbi__malloc_mad4@@YAPEAXHHHHH@Z</DECORATED>
+    <FUNCLINE>1061</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1064</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__malloc_mad4</FUNCTION>
+    <DECORATED>?stbi__malloc_mad4@@YAPEAXHHHHH@Z</DECORATED>
+    <FUNCLINE>1061</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1064</LINE>
+      <COLUMN>26</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__malloc_mad4</FUNCTION>
+    <DECORATED>?stbi__malloc_mad4@@YAPEAXHHHHH@Z</DECORATED>
+    <FUNCLINE>1061</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1064</LINE>
+      <COLUMN>24</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__malloc_mad4</FUNCTION>
+    <DECORATED>?stbi__malloc_mad4@@YAPEAXHHHHH@Z</DECORATED>
+    <FUNCLINE>1061</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1211</LINE>
+      <COLUMN>51</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__convert_8_to_16</FUNCTION>
+    <DECORATED>?stbi__convert_8_to_16@@YAPEAGPEAEHHH@Z</DECORATED>
+    <FUNCLINE>1205</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1230</LINE>
+      <COLUMN>39</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__vertical_flip</FUNCTION>
+    <DECORATED>?stbi__vertical_flip@@YAXPEAXHHH@Z</DECORATED>
+    <FUNCLINE>1221</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1230</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__vertical_flip</FUNCTION>
+    <DECORATED>?stbi__vertical_flip@@YAXPEAXHHH@Z</DECORATED>
+    <FUNCLINE>1221</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1769</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__convert_format</FUNCTION>
+    <DECORATED>?stbi__convert_format@@YAPEAEPEAEHHII@Z</DECORATED>
+    <FUNCLINE>1754</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1769</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__convert_format</FUNCTION>
+    <DECORATED>?stbi__convert_format@@YAPEAEPEAEHHII@Z</DECORATED>
+    <FUNCLINE>1754</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1770</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__convert_format</FUNCTION>
+    <DECORATED>?stbi__convert_format@@YAPEAEPEAEHHII@Z</DECORATED>
+    <FUNCLINE>1754</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1770</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__convert_format</FUNCTION>
+    <DECORATED>?stbi__convert_format@@YAPEAEPEAEHHII@Z</DECORATED>
+    <FUNCLINE>1754</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1819</LINE>
+      <COLUMN>57</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__convert_format16</FUNCTION>
+    <DECORATED>?stbi__convert_format16@@YAPEAGPEAGHHII@Z</DECORATED>
+    <FUNCLINE>1811</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1819</LINE>
+      <COLUMN>53</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__convert_format16</FUNCTION>
+    <DECORATED>?stbi__convert_format16@@YAPEAGPEAGHHII@Z</DECORATED>
+    <FUNCLINE>1811</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1819</LINE>
+      <COLUMN>49</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__convert_format16</FUNCTION>
+    <DECORATED>?stbi__convert_format16@@YAPEAGPEAGHHII@Z</DECORATED>
+    <FUNCLINE>1811</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1826</LINE>
+      <COLUMN>40</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__convert_format16</FUNCTION>
+    <DECORATED>?stbi__convert_format16@@YAPEAGPEAGHHII@Z</DECORATED>
+    <FUNCLINE>1811</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1826</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__convert_format16</FUNCTION>
+    <DECORATED>?stbi__convert_format16@@YAPEAGPEAGHHII@Z</DECORATED>
+    <FUNCLINE>1811</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1827</LINE>
+      <COLUMN>40</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__convert_format16</FUNCTION>
+    <DECORATED>?stbi__convert_format16@@YAPEAGPEAGHHII@Z</DECORATED>
+    <FUNCLINE>1811</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>1827</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__convert_format16</FUNCTION>
+    <DECORATED>?stbi__convert_format16@@YAPEAGPEAGHHII@Z</DECORATED>
+    <FUNCLINE>1811</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>3021</LINE>
+      <COLUMN>55</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__parse_entropy_coded_data</FUNCTION>
+    <DECORATED>?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z</DECORATED>
+    <FUNCLINE>2948</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>3052</LINE>
+      <COLUMN>64</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__parse_entropy_coded_data</FUNCTION>
+    <DECORATED>?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z</DECORATED>
+    <FUNCLINE>2948</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>2966</LINE>
+      <COLUMN>75</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__parse_entropy_coded_data</FUNCTION>
+    <DECORATED>?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z</DECORATED>
+    <FUNCLINE>2948</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>2966</LINE>
+      <COLUMN>73</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__parse_entropy_coded_data</FUNCTION>
+    <DECORATED>?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z</DECORATED>
+    <FUNCLINE>2948</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>2966</LINE>
+      <COLUMN>79</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__parse_entropy_coded_data</FUNCTION>
+    <DECORATED>?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z</DECORATED>
+    <FUNCLINE>2948</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>2994</LINE>
+      <COLUMN>82</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__parse_entropy_coded_data</FUNCTION>
+    <DECORATED>?stbi__parse_entropy_coded_data@@YAHPEAUstbi__jpeg@@@Z</DECORATED>
+    <FUNCLINE>2948</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>3089</LINE>
+      <COLUMN>55</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__jpeg_finish</FUNCTION>
+    <DECORATED>?stbi__jpeg_finish@@YAXPEAUstbi__jpeg@@@Z</DECORATED>
+    <FUNCLINE>3079</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>3091</LINE>
+      <COLUMN>75</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__jpeg_finish</FUNCTION>
+    <DECORATED>?stbi__jpeg_finish@@YAXPEAUstbi__jpeg@@@Z</DECORATED>
+    <FUNCLINE>3079</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>3091</LINE>
+      <COLUMN>73</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__jpeg_finish</FUNCTION>
+    <DECORATED>?stbi__jpeg_finish@@YAXPEAUstbi__jpeg@@@Z</DECORATED>
+    <FUNCLINE>3079</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>3091</LINE>
+      <COLUMN>79</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__jpeg_finish</FUNCTION>
+    <DECORATED>?stbi__jpeg_finish@@YAXPEAUstbi__jpeg@@@Z</DECORATED>
+    <FUNCLINE>3079</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>3586</LINE>
+      <COLUMN>43</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__resample_row_hv_2_simd</FUNCTION>
+    <DECORATED>?stbi__resample_row_hv_2_simd@@YAPEAEPEAE00HH@Z</DECORATED>
+    <FUNCLINE>3529</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>3903</LINE>
+      <COLUMN>71</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>load_jpeg_image</FUNCTION>
+    <DECORATED>?load_jpeg_image@@YAPEAEPEAUstbi__jpeg@@PEAH11H@Z</DECORATED>
+    <FUNCLINE>3864</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>3926</LINE>
+      <COLUMN>49</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>load_jpeg_image</FUNCTION>
+    <DECORATED>?load_jpeg_image@@YAPEAEPEAUstbi__jpeg@@PEAH11H@Z</DECORATED>
+    <FUNCLINE>3864</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>3926</LINE>
+      <COLUMN>35</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>load_jpeg_image</FUNCTION>
+    <DECORATED>?load_jpeg_image@@YAPEAEPEAUstbi__jpeg@@PEAH11H@Z</DECORATED>
+    <FUNCLINE>3864</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>4738</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__create_png_image_raw</FUNCTION>
+    <DECORATED>?stbi__create_png_image_raw@@YAHPEAUstbi__png@@PEAEIHIIHH@Z</DECORATED>
+    <FUNCLINE>4695</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>4739</LINE>
+      <COLUMN>44</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__create_png_image_raw</FUNCTION>
+    <DECORATED>?stbi__create_png_image_raw@@YAHPEAUstbi__png@@PEAEIHIIHH@Z</DECORATED>
+    <FUNCLINE>4695</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>4740</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__create_png_image_raw</FUNCTION>
+    <DECORATED>?stbi__create_png_image_raw@@YAHPEAUstbi__png@@PEAEIHIIHH@Z</DECORATED>
+    <FUNCLINE>4695</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>4823</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__create_png_image_raw</FUNCTION>
+    <DECORATED>?stbi__create_png_image_raw@@YAHPEAUstbi__png@@PEAEIHIIHH@Z</DECORATED>
+    <FUNCLINE>4695</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>4891</LINE>
+      <COLUMN>47</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__create_png_image</FUNCTION>
+    <DECORATED>?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z</DECORATED>
+    <FUNCLINE>4860</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>4891</LINE>
+      <COLUMN>35</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__create_png_image</FUNCTION>
+    <DECORATED>?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z</DECORATED>
+    <FUNCLINE>4860</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>4891</LINE>
+      <COLUMN>65</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__create_png_image</FUNCTION>
+    <DECORATED>?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z</DECORATED>
+    <FUNCLINE>4860</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>4892</LINE>
+      <COLUMN>38</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__create_png_image</FUNCTION>
+    <DECORATED>?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z</DECORATED>
+    <FUNCLINE>4860</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>4892</LINE>
+      <COLUMN>35</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__create_png_image</FUNCTION>
+    <DECORATED>?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z</DECORATED>
+    <FUNCLINE>4860</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>4892</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__create_png_image</FUNCTION>
+    <DECORATED>?stbi__create_png_image@@YAHPEAUstbi__png@@PEAEIHHHH@Z</DECORATED>
+    <FUNCLINE>4860</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>5712</LINE>
+      <COLUMN>49</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__bmp_load</FUNCTION>
+    <DECORATED>?stbi__bmp_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>5528</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>5712</LINE>
+      <COLUMN>40</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__bmp_load</FUNCTION>
+    <DECORATED>?stbi__bmp_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>5528</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>5713</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__bmp_load</FUNCTION>
+    <DECORATED>?stbi__bmp_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>5528</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>5713</LINE>
+      <COLUMN>43</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__bmp_load</FUNCTION>
+    <DECORATED>?stbi__bmp_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>5528</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>5713</LINE>
+      <COLUMN>40</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__bmp_load</FUNCTION>
+    <DECORATED>?stbi__bmp_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>5528</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>5744</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26819</DEFECTCODE>
+    <DESCRIPTION>Unannotated fallthrough between switch labels (es.78).</DESCRIPTION>
+    <FUNCTION>stbi__tga_get_comp</FUNCTION>
+    <DECORATED>?stbi__tga_get_comp@@YAHHHPEAH@Z</DECORATED>
+    <FUNCLINE>5736</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>5933</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__tga_load</FUNCTION>
+    <DECORATED>?stbi__tga_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>5868</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>5933</LINE>
+      <COLUMN>42</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__tga_load</FUNCTION>
+    <DECORATED>?stbi__tga_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>5868</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6201</LINE>
+      <COLUMN>42</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__psd_load</FUNCTION>
+    <DECORATED>?stbi__psd_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@H@Z</DECORATED>
+    <FUNCLINE>6123</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6201</LINE>
+      <COLUMN>39</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__psd_load</FUNCTION>
+    <DECORATED>?stbi__psd_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@H@Z</DECORATED>
+    <FUNCLINE>6123</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6283</LINE>
+      <COLUMN>58</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__psd_load</FUNCTION>
+    <DECORATED>?stbi__psd_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@H@Z</DECORATED>
+    <FUNCLINE>6123</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6295</LINE>
+      <COLUMN>42</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__psd_load</FUNCTION>
+    <DECORATED>?stbi__psd_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@H@Z</DECORATED>
+    <FUNCLINE>6123</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6420</LINE>
+      <COLUMN>39</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__pic_load_core</FUNCTION>
+    <DECORATED>?stbi__pic_load_core@@YAPEAEPEAUstbi__context@@HHPEAHPEAE@Z</DECORATED>
+    <FUNCLINE>6387</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6420</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__pic_load_core</FUNCTION>
+    <DECORATED>?stbi__pic_load_core@@YAPEAEPEAUstbi__context@@HHPEAHPEAE@Z</DECORATED>
+    <FUNCLINE>6387</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6524</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__pic_load</FUNCTION>
+    <DECORATED>?stbi__pic_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>6497</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6524</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__pic_load</FUNCTION>
+    <DECORATED>?stbi__pic_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>6497</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6790</LINE>
+      <COLUMN>42</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__gif_load_next</FUNCTION>
+    <DECORATED>?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z</DECORATED>
+    <FUNCLINE>6775</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6791</LINE>
+      <COLUMN>49</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__gif_load_next</FUNCTION>
+    <DECORATED>?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z</DECORATED>
+    <FUNCLINE>6775</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6799</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__gif_load_next</FUNCTION>
+    <DECORATED>?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z</DECORATED>
+    <FUNCLINE>6775</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6800</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__gif_load_next</FUNCTION>
+    <DECORATED>?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z</DECORATED>
+    <FUNCLINE>6775</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6833</LINE>
+      <COLUMN>46</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__gif_load_next</FUNCTION>
+    <DECORATED>?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z</DECORATED>
+    <FUNCLINE>6775</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6833</LINE>
+      <COLUMN>39</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__gif_load_next</FUNCTION>
+    <DECORATED>?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z</DECORATED>
+    <FUNCLINE>6775</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6837</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__gif_load_next</FUNCTION>
+    <DECORATED>?stbi__gif_load_next@@YAPEAEPEAUstbi__context@@PEAUstbi__gif@@PEAHHPEAE@Z</DECORATED>
+    <FUNCLINE>6775</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6960</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>Function uses '35036' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.</DESCRIPTION>
+    <FUNCTION>stbi__load_gif_main</FUNCTION>
+    <DECORATED>?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z</DECORATED>
+    <FUNCLINE>6960</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>6991</LINE>
+      <COLUMN>38</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__load_gif_main</FUNCTION>
+    <DECORATED>?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z</DECORATED>
+    <FUNCLINE>6960</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>7007</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__load_gif_main</FUNCTION>
+    <DECORATED>?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z</DECORATED>
+    <FUNCLINE>6960</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>7018</LINE>
+      <COLUMN>40</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__load_gif_main</FUNCTION>
+    <DECORATED>?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z</DECORATED>
+    <FUNCLINE>6960</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>7018</LINE>
+      <COLUMN>35</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__load_gif_main</FUNCTION>
+    <DECORATED>?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z</DECORATED>
+    <FUNCLINE>6960</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>7020</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__load_gif_main</FUNCTION>
+    <DECORATED>?stbi__load_gif_main@@YAPEAXPEAUstbi__context@@PEAPEAHPEAH222H@Z</DECORATED>
+    <FUNCLINE>6960</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>7045</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>Function uses '34980' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.</DESCRIPTION>
+    <FUNCTION>stbi__gif_load</FUNCTION>
+    <DECORATED>?stbi__gif_load@@YAPEAXPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>7045</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>7146</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26819</DEFECTCODE>
+    <DESCRIPTION>Unannotated fallthrough between switch labels (es.78).</DESCRIPTION>
+    <FUNCTION>stbi__hdr_convert</FUNCTION>
+    <DECORATED>?stbi__hdr_convert@@YAXPEAMPEAEH@Z</DECORATED>
+    <FUNCLINE>7128</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>7149</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26819</DEFECTCODE>
+    <DESCRIPTION>Unannotated fallthrough between switch labels (es.78).</DESCRIPTION>
+    <FUNCTION>stbi__hdr_convert</FUNCTION>
+    <DECORATED>?stbi__hdr_convert@@YAXPEAMPEAEH@Z</DECORATED>
+    <FUNCLINE>7128</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>7220</LINE>
+      <COLUMN>51</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__hdr_load</FUNCTION>
+    <DECORATED>?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>7155</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>7220</LINE>
+      <COLUMN>43</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__hdr_load</FUNCTION>
+    <DECORATED>?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>7155</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>7220</LINE>
+      <COLUMN>66</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__hdr_load</FUNCTION>
+    <DECORATED>?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>7155</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>7277</LINE>
+      <COLUMN>52</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__hdr_load</FUNCTION>
+    <DECORATED>?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>7155</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>7277</LINE>
+      <COLUMN>48</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__hdr_load</FUNCTION>
+    <DECORATED>?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>7155</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>7277</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__hdr_load</FUNCTION>
+    <DECORATED>?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>7155</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Documents\Visual Studio 2019\Libraries\stb-master\</FILEPATH>
+      <FILENAME>stb_image.h</FILENAME>
+      <LINE>7277</LINE>
+      <COLUMN>75</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>stbi__hdr_load</FUNCTION>
+    <DECORATED>?stbi__hdr_load@@YAPEAMPEAUstbi__context@@PEAH11HPEAUstbi__result_info@@@Z</DECORATED>
+    <FUNCLINE>7155</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>47</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkResult' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>CreateDebugUtilsMessengerEXT</FUNCTION>
+    <DECORATED>?CreateDebugUtilsMessengerEXT@@YA?AW4VkResult@@PEAUVkInstance_T@@PEBUVkDebugUtilsMessengerCreateInfoEXT@@PEBUVkAllocationCallbacks@@PEAPEAUVkDebugUtilsMessengerEXT_T@@@Z</DECORATED>
+    <FUNCLINE>44</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>443</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkPresentModeKHR' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::createSwapChain</FUNCTION>
+    <DECORATED>?createSwapChain@HelloTriangleApplication@@AEAAXXZ</DECORATED>
+    <FUNCLINE>439</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>487</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkFormat' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::createSwapChain</FUNCTION>
+    <DECORATED>?createSwapChain@HelloTriangleApplication@@AEAAXXZ</DECORATED>
+    <FUNCLINE>439</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>655</LINE>
+      <COLUMN>56</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkDynamicState' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::createGraphicsPipeline</FUNCTION>
+    <DECORATED>?createGraphicsPipeline@HelloTriangleApplication@@AEAAXXZ</DECORATED>
+    <FUNCLINE>576</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>729</LINE>
+      <COLUMN>54</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::createTextureImage</FUNCTION>
+    <DECORATED>?createTextureImage@HelloTriangleApplication@@AEAAXXZ</DECORATED>
+    <FUNCLINE>726</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>729</LINE>
+      <COLUMN>42</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::createTextureImage</FUNCTION>
+    <DECORATED>?createTextureImage@HelloTriangleApplication@@AEAAXXZ</DECORATED>
+    <FUNCLINE>726</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>758</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkImageTiling' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::createImage</FUNCTION>
+    <DECORATED>?createImage@HelloTriangleApplication@@AEAAXIIW4VkFormat@@W4VkImageTiling@@IIAEAPEAUVkImage_T@@AEAPEAUVkDeviceMemory_T@@@Z</DECORATED>
+    <FUNCLINE>758</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>793</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkImageLayout' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::transitionImageLayout</FUNCTION>
+    <DECORATED>?transitionImageLayout@HelloTriangleApplication@@AEAAXPEAUVkImage_T@@W4VkFormat@@W4VkImageLayout@@2@Z</DECORATED>
+    <FUNCLINE>793</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>74</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'SwapChainSupportDetails::capabilities' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>SwapChainSupportDetails::{ctor}</FUNCTION>
+    <DECORATED>??0SwapChainSupportDetails@@QEAA@XZ</DECORATED>
+    <FUNCLINE>74</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>SwapChainSupportDetails::capabilities</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1417</LINE>
+      <COLUMN>42</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'VkDebugUtilsMessageSeverityFlagBitsEXT' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::debugCallback</FUNCTION>
+    <DECORATED>?debugCallback@HelloTriangleApplication@@CAIW4VkDebugUtilsMessageSeverityFlagBitsEXT@@IPEBUVkDebugUtilsMessengerCallbackDataEXT@@PEAX@Z</DECORATED>
+    <FUNCLINE>1417</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::window' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::window</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::debugMessenger' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::debugMessenger</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::instance' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::instance</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::graphicsQueue' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::graphicsQueue</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::presentQueue' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::presentQueue</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::device' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::device</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::swapChain' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::swapChain</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::surface' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::surface</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::swapChainImageFormat' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::swapChainImageFormat</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::swapChainExtent' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::swapChainExtent</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::renderPass' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::renderPass</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::descriptorSetLayout' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::descriptorSetLayout</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::pipelineLayout' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::pipelineLayout</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::graphicsPipeline' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::graphicsPipeline</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::commandPool' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::commandPool</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::textureImage' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::textureImage</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::textureImageMemory' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::textureImageMemory</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::vertexBuffer' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::vertexBuffer</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::vertexBufferMemory' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::vertexBufferMemory</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::indexBuffer' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::indexBuffer</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::indexBufferMemory' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::indexBufferMemory</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>1422</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'HelloTriangleApplication::descriptorPool' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>HelloTriangleApplication::{ctor}</FUNCTION>
+    <DECORATED>??0HelloTriangleApplication@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1422</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>HelloTriangleApplication::descriptorPool</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

@@ -171,13 +171,6 @@
     <None Include="shader.frag" />
     <None Include="shader.vert" />
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\texture.jpg" />
-    <Image Include="viking_room.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Object Include="VikingHouse.obj" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -1,10 +1,10 @@
-#Vulkan Render Project
+###Vulkan Render Project
 
 This project is the custom implementation of wider series of tutorials craeted by Alexander Overvoorde which can be found here:
 https://docs.vulkan.org/tutorial/latest/00_Introduction.html
 The project implements all core concepts of the Vulkan API.
 
-#How to run?
+###How to run?
 
 To open the project perform following steps:
 

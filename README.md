@@ -17,3 +17,7 @@ To open the project perform following steps:
 3. Open the examples folder and double click on "Vulkan 3D Application.exe"
 
 4. Upon doing it the working solution should appear
+
+
+### Developer Notes
+

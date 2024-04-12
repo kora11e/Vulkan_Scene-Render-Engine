@@ -244,7 +244,7 @@ private:
         createTextureImage();
         createTextureImageView();
         createTextureSampler();
-        loadModel();
+        loadObjModel();
         createVertexBuffer();
         createIndexBuffer();
         createUniformBuffers();
@@ -1142,7 +1142,7 @@ private:
         endSingleTimeCommands(commandBuffer);
     }
 
-    void loadModel() {
+    void loadObjModel() {
         tinyobj::attrib_t attrib;
         std::vector<tinyobj::shape_t> shapes;
         std::vector<tinyobj::material_t> materials;

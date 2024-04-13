@@ -1761,6 +1761,11 @@ private:
     }
 };
 
+void GameLoop() {
+    //implement solution here
+    
+}
+
 int main() {
     HelloTriangleApplication app;
 

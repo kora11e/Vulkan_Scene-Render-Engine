@@ -1,9 +1,44 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-libfbxsdk-md.lib(fbxutils.cxx.obj) : warning LNK4099: PDB 'libfbxsdk-md.pdb' was not found with 'libfbxsdk-md.lib(fbxutils.cxx.obj)' or at 'C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Debug\libfbxsdk-md.pdb'; linking object as if no debug info
-libfbxsdk-md.lib(fbxstring.cxx.obj) : warning LNK4099: PDB 'libfbxsdk-md.pdb' was not found with 'libfbxsdk-md.lib(fbxstring.cxx.obj)' or at 'C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Debug\libfbxsdk-md.pdb'; linking object as if no debug info
-libfbxsdk-md.lib(fbxstatus.cxx.obj) : warning LNK4099: PDB 'libfbxsdk-md.pdb' was not found with 'libfbxsdk-md.lib(fbxstatus.cxx.obj)' or at 'C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Debug\libfbxsdk-md.pdb'; linking object as if no debug info
-libfbxsdk-md.lib(fbxfolder.cxx.obj) : warning LNK4099: PDB 'libfbxsdk-md.pdb' was not found with 'libfbxsdk-md.lib(fbxfolder.cxx.obj)' or at 'C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Debug\libfbxsdk-md.pdb'; linking object as if no debug info
-libfbxsdk-md.lib(fbxdebug.cxx.obj) : warning LNK4099: PDB 'libfbxsdk-md.pdb' was not found with 'libfbxsdk-md.lib(fbxdebug.cxx.obj)' or at 'C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Debug\libfbxsdk-md.pdb'; linking object as if no debug info
-libfbxsdk-md.lib(fbxalloc.cxx.obj) : warning LNK4099: PDB 'libfbxsdk-md.pdb' was not found with 'libfbxsdk-md.lib(fbxalloc.cxx.obj)' or at 'C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Debug\libfbxsdk-md.pdb'; linking object as if no debug info
-  Vulkan 3D Render Application.vcxproj -> C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Debug\Vulkan 3D Render Application.exe
+  Camera.cpp
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(26,18): error C2039: 'setViewDirection': is not a member of 'lve::LveCamera'
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.hpp(9): message : see declaration of 'lve::LveCamera'
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(31,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(32,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(33,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(34,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(35,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(36,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(37,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(38,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(39,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(40,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(41,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(42,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(43,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(46,18): error C2039: 'setViewTarget': is not a member of 'lve::LveCamera'
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.hpp(9): message : see declaration of 'lve::LveCamera'
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(50,18): error C2039: 'setViewYXZ': is not a member of 'lve::LveCamera'
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.hpp(9): message : see declaration of 'lve::LveCamera'
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(60,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(61,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(62,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(63,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(64,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(65,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(66,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(67,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(68,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(69,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(70,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(71,3): error C2065: 'viewMatrix': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(72,3): error C2065: 'viewMatrix': undeclared identifier
+  glTFLoader.cpp
+  GUI.cpp
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\GUI.cpp(23,33): error C2039: 'size': is not a member of 'std'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stddef.h(23): message : see declaration of 'std'
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\GUI.cpp(23,38): error C2065: 'pool_sizes': undeclared identifier
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\GUI.cpp(23,37): error C3861: 'size': identifier not found
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\GUI.cpp(24,25): error C2065: 'pool_sizes': undeclared identifier
+  SkyBox.cpp
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\SkyBox.cpp(1,10): fatal error C1083: Cannot open include file: 'ktx.h': No such file or directory
+  Generating Code...

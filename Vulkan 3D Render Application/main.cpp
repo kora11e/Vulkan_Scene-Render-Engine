@@ -29,6 +29,9 @@
 #include <set>
 #include <unordered_map>
 
+/// <summary>
+/// Global Types
+/// </summary>
 const uint32_t WIDTH = 800;
 const uint32_t HEIGHT = 600;
 

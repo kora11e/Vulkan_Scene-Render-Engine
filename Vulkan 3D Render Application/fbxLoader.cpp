@@ -1,1 +1,3 @@
-#include <fbxsdk.h>
+#include "fbxLoader.hpp"
+
+fbxLoader::object3D* object;

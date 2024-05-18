@@ -36,6 +36,12 @@
     <ClCompile Include="Transformations.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Lve_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.hpp">
@@ -47,10 +53,13 @@
     <ClInclude Include="glTFLoader.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="window.hpp">
+    <ClInclude Include="Transformations.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Transformations.hpp">
+    <ClInclude Include="lve_window.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HelloApplication.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,7 +1,5 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Katalog Output nie kończy się ukośnikiem. To wystąpienie kompilacji doda ukośnik, ponieważ jest on niezbędny, aby możliwa była poprawna ocena katalogu Output.
   App.cpp
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\App.cpp(9,11): error C2275: "lve::LveWindow": niedozwolone użycie tego typu jako wyrażenia
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\lve_window.h(8): message : zobacz deklarację „lve::LveWindow”
   Camera.cpp
 C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.cpp(26,18): error C2039: „setViewDirection”: nie jest składową elementu „lve::LveCamera”
 C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\Camera.hpp(9): message : zobacz deklarację „lve::LveCamera”
@@ -43,7 +41,6 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stddef.h(23): m
 C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\GUI.cpp(23,38): error C2065: "pool_sizes": niezadeklarowany identyfikator
 C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\GUI.cpp(23,37): error C3861: "size": identyfikatora nie odnaleziono
 C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\GUI.cpp(24,25): error C2065: "pool_sizes": niezadeklarowany identyfikator
-  main.cpp
   SkyBox.cpp
 C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Application\SkyBox.cpp(1,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'ktx.h': No such file or directory
   test.cpp

@@ -1,0 +1,9 @@
+﻿  App.cpp
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\App.h(13,55): error C2661: "lve::LveWindow::LveWindow": brak przeciążonej funkcji przyjmującej 3 argumenty
+  lve_device.cpp
+  lve_window.cpp
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_window.cpp(6,55): error C2065: "w": niezadeklarowany identyfikator
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_window.cpp(6,68): error C2065: "h": niezadeklarowany identyfikator
+  main.cpp
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\App.h(13,55): error C2661: "lve::LveWindow::LveWindow": brak przeciążonej funkcji przyjmującej 3 argumenty
+  Generowanie kodu...

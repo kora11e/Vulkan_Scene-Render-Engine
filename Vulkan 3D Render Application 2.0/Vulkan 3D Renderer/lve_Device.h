@@ -24,5 +24,6 @@ namespace lve{
 		#ifndef NDEBUG
 		const bool enableValidationLayers = false;
 		#else
+		#endif
 	};
 }

@@ -29,6 +29,10 @@ namespace lve {
 		LvePipeline(const LvePipeline&) = delete;
 		void operator=(const LvePipeline&) = delete;
 
+		void bind(VkCommandBuffer commandBuffer) {
+			vkCmdBindPipeline(commandBuffer, VK_PIPELINE_BIND_POINT_GRAPHICS, graphicsPipeline);
+		}
+
 		static PipelineConfigInfo defaultPipelineConfigInfo(uint32_t width, uint32_t height);
 	private:
 		static std::vector<char> readFile(const std::string& filepath);

@@ -43,7 +43,29 @@ namespace lve {
 	}
 
 	void App::createcommadBuffers() {
+		commandBuffer.resize(lveSwapChain.imageCount());
 
+		VkCommandBufferAllocateInfo alloInfo{};
+		alloInfo.sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO;
+		alloInfo.level = VK_COMMAND_BUFFER_LEVEL_PRIMARY;
+		alloInfo.commandPool = lveDevice.getCommandPool();
+		alloInfo.commandBufferCount = static_cast<uint32_t>(commandBuffer.size());
+
+		if (vkAllocateCommandBuffers(lveDevice.device(), &alloInfo, commandBuffer.data()) != VK_SUCCESS) {
+			throw std::runtime_error("Failed to allocate command buffers!");
+		}
+
+		for (int i = 0; i < commandBuffer.size(); i++) {
+			VkCommandBufferBeginInfo beginInfo{};
+			beginInfo.sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO;
+
+			if (vkBeginCommandBuffer(commandBuffer[i], &beginInfo) != VK_SUCCESS) {
+				throw std::runtime_error("Failed to begin recording command buffer!");
+			}
+
+			VkRenderPassBeginInfo renderPassInfo{};
+
+		}
 	}
 
 	void App::drawFrame() {

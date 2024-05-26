@@ -160,12 +160,14 @@
     <ClCompile Include="lve_pipeline.cpp" />
     <ClCompile Include="lve_window.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="swapchain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="lve_device.h" />
     <ClInclude Include="lve_pipeline.h" />
     <ClInclude Include="lve_window.h" />
+    <ClInclude Include="Swapchain.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="compile.bat" />

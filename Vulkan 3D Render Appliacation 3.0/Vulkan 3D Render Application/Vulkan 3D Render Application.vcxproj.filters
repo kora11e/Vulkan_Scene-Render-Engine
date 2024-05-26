@@ -50,10 +50,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="shader.vert">
-      <Filter>Pliki źródłowe\shaders</Filter>
+      <Filter>Pliki źródłowe</Filter>
     </None>
     <None Include="shader.frag">
-      <Filter>Pliki źródłowe\shaders</Filter>
+      <Filter>Pliki źródłowe</Filter>
+    </None>
+    <None Include="compile.bat">
+      <Filter>Pliki źródłowe</Filter>
     </None>
   </ItemGroup>
 </Project>

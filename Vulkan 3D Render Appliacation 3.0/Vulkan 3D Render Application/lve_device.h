@@ -93,7 +93,7 @@ namespace lve {
         VkInstance instance;
         VkDebugUtilsMessengerEXT debugMessenger;
         VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
-        Window& window;
+        LveWindow& window;
         VkCommandPool commandPool;
 
         VkDevice device_;

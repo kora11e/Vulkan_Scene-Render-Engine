@@ -3,9 +3,9 @@
 
 namespace lve {
 
-	LveWindow::LveWindow(int width, int height) : width{ w }, height{ h } {
+	LveWindow::LveWindow(int w, int h, std::string name) : width{ w }, height{ h }, windowName{ name } {
 		initWindow();
-	}
+	};
 
 	LveWindow::~LveWindow() {
 		glfwDestroyWindow(window);

@@ -8,6 +8,9 @@
 namespace lve {
 
 	struct PipelineConfigInfo {
+		PipelineConfigInfo(const PipelineConfigInfo&) = delete;
+		PipelineConfigInfo& operator=(const PipelineConfigInfo&) = delete;
+
 		VkViewport viewport;
 		VkRect2D scissor;
 		VkPipelineInputAssemblyStateCreateInfo inputAssemblyInfo;
@@ -16,6 +19,8 @@ namespace lve {
 		VkPipelineColorBlendAttachmentState colorBlendAttachment;
 		VkPipelineColorBlendStateCreateInfo colorBlendInfo;
 		VkPipelineDepthStencilStateCreateInfo depthStencilInfo;
+		std::vector<VkDynamicState> dynamicStateEnables;
+		VkPipelineDynamicStateCreateInfo dynamicStateInfo;
 		VkPipelineLayout layout = nullptr;
 		VkRenderPass renderPass = nullptr;
 		uint32_t subpass = 0;
@@ -27,7 +32,7 @@ namespace lve {
 		~LvePipeline();
 		
 		LvePipeline(const LvePipeline&) = delete;
-		void operator=(const LvePipeline&) = delete;
+		LvePipeline& operator=(const LvePipeline&) = delete;
 
 		void bind(VkCommandBuffer commandBuffer) {
 			vkCmdBindPipeline(commandBuffer, VK_PIPELINE_BIND_POINT_GRAPHICS, graphicsPipeline);

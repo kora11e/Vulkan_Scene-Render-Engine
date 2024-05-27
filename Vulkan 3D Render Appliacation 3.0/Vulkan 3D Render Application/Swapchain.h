@@ -19,7 +19,7 @@ namespace lve {
         ~MyEngineSwapChain();
 
         MyEngineSwapChain(const MyEngineSwapChain&) = delete;
-        void operator=(const MyEngineSwapChain&) = delete;
+        MyEngineSwapChain& operator=(const MyEngineSwapChain&) = delete;
 
         VkFramebuffer getFrameBuffer(int index) { return swapChainFramebuffers[index]; }
         VkRenderPass getRenderPass() { return renderPass; }

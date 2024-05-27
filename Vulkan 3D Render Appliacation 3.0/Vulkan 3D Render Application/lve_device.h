@@ -35,7 +35,7 @@ namespace lve {
 
         // Not copyable or movable
         MyEngineDevice(const MyEngineDevice&) = delete;
-        void operator=(const MyEngineDevice&) = delete;
+        MyEngineDevice& operator=(const MyEngineDevice&) = delete;
         MyEngineDevice(MyEngineDevice&&) = delete;
         MyEngineDevice& operator=(MyEngineDevice&&) = delete;
 

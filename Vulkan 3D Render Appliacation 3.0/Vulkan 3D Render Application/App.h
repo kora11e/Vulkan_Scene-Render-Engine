@@ -27,6 +27,7 @@ namespace lve {
 		void createPipelineLayout();
 		void createPipeline();
 		void createcommadBuffers();
+		void freeCommandBuffers();
 		void drawFrame();
 		void recreateSwapChain();
 		void recordCommandBuffer(int imageIndex);

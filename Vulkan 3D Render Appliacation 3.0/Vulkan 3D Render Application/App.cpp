@@ -37,7 +37,8 @@ namespace lve {
 	}
 
 	void App::createPipeline() {
-		auto pipelineConfig = LvePipeline::defaultPipelineConfigInfo(lveSwapChain->width(), lveSwapChain->height());
+		PipelineConfigInfo pipelineConfig{};
+		LvePipeline::defaultPipelineConfigInfo(pipelineConfig);
 		pipelineConfig.renderPass = lveSwapChain->getRenderPass();
 		pipelineConfig.layout = pipelineLayout;
 		lvePipeline = std::make_unique<LvePipeline>(lveDevice, "./shader.vert.spv", "./shader.frag.spv", pipelineConfig);
@@ -50,7 +51,16 @@ namespace lve {
 			glfwWaitEvents();
 		}
 		vkDeviceWaitIdle(lveDevice.device());
-		lveSwapChain = std::make_unique<MyEngineDevice>(lveDevice, extent);
+
+		if (lveSwapChain == nullptr) {
+			lveSwapChain = std::make_unique<MyEngineDevice>(lveDevice, extent);
+		}
+		else {
+			lveSwapChain = std::make_unique<MyEngineDevice>(lveDevice, extent, std::move(lveSwapChain));
+			if (lveSwapChain->imageCount() != commandBuffer.size()) {
+				freeCommandBuffers();
+			}
+		}
 		createPipeline();
 	}
 
@@ -65,6 +75,11 @@ namespace lve {
 		if (vkCreatePipelineLayout(lveDevice.device(), &pipelineLayoutInfo, nullptr, &pipelineLayout) != VK_SUCCESS) {
 			throw std::runtime_error("Failed to create Pipeline!");
 		}
+	}
+
+	void App::freeCommandBuffers() {
+		vkFreeCommandBuffers(lveDevice.device(), lveDevice.getCommandPool(), static_cast<float>(commandBuffer.size()), commandBuffer.data());
+		commandBuffer.clear();
 	}
 
 	void App::createcommadBuffers() {
@@ -105,6 +120,17 @@ namespace lve {
 		renderPassInfo.pClearValues = clearValue.data();
 
 		vkCmdBeginRenderPass(commandBuffer[imageIndex], &renderPassInfo, VK_SUBPASS_CONTENTS_INLINE);
+
+		VkViewport viewport{};
+		viewport.x = 0.0f;
+		viewport.y = 0.0f;
+		viewport.width = static_cast<uint32_t>(lveSwapChain->getSwapChainExtent().width);
+		viewport.height = static_cast<uint32_t>(lveSwapChain->getSwapChainExtent().height);
+		viewport.minDepth = 0.0f;
+		viewport.maxDepth = 1.0f;
+		VkRect2D scissor{ {0, 0}, lveSwapChain->getSwapChainExtent() };
+		vkCmdSetViewport(commandBuffer[imageIndex], 0, 1, &viewport);
+		vkCmdSetScissor(commandBuffer[imageIndex], 0, 1, &scissor);
 
 		lvePipeline->bind(commandBuffer[imageIndex]);
 		lveModel->bind(commandBuffer[imageIndex]);

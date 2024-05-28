@@ -6,7 +6,7 @@
 #include "lve_device.h"
 #include "Swapchain.h"
 
-
+#include <stdexcept>
 #include <memory>
 #include <vector>
 

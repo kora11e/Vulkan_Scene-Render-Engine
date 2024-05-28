@@ -156,18 +156,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
+    <ClCompile Include="gameObject.cpp" />
     <ClCompile Include="lve_device.cpp" />
     <ClCompile Include="lve_model.cpp" />
     <ClCompile Include="lve_pipeline.cpp" />
+    <ClCompile Include="lve_renderer.cpp" />
     <ClCompile Include="lve_window.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="swapchain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
+    <ClInclude Include="gameObject.h" />
     <ClInclude Include="lve_device.h" />
     <ClInclude Include="lve_model.h" />
     <ClInclude Include="lve_pipeline.h" />
+    <ClInclude Include="lve_renderer.h" />
     <ClInclude Include="lve_window.h" />
     <ClInclude Include="Swapchain.h" />
   </ItemGroup>

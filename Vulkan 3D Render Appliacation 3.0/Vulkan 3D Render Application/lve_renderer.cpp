@@ -1,4 +1,4 @@
-#include "App.h"
+#include "lve_renderer.h"
 
 #define GLM_FORCE_RADIANS
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
@@ -12,26 +12,20 @@
 
 namespace lve {
 
-	struct PushDataConstant {
-		glm::mat2 transform{1.f};
-		glm::vec2 offset;
-		alignas(16) glm::vec3 color;
-	};
-
-	App::App() {
+	Renderer::Renderer(LveWindow& window, MyEngineDevice& device) {
 		loadgameObjects();
 		createPipelineLayout();
 		createcommadBuffers();
 		recreateSwapChain();
 	}
 
-	App::~App() {
+	Renderer::~Renderer() {
 		vkDestroyPipelineLayout(lveDevice.device(), pipelineLayout, nullptr);
 	}
 
-	void App::run() {
+	void Renderer::run() {
 		while (!lveWindow.shouldClose()) {
-		
+
 			glfwPollEvents();
 			drawFrame();
 		}
@@ -39,7 +33,7 @@ namespace lve {
 		vkDeviceWaitIdle(lveDevice.device());
 	}
 
-	void App::loadgameObjects() {
+	void Renderer::loadgameObjects() {
 		std::vector<LveModel::Vertex> vertices{
 			{{0.0f, -0.5f}, {1.0f, 0.0f, 0.0f}},
 			{{0.5f, 0.5f}, {1.0f, 1.0f, 0.0f}},
@@ -49,15 +43,15 @@ namespace lve {
 
 		auto triangle = LveGameObject::createGameObject();
 		triangle.model = lveModel;
-		triangle.color = {.1f, .8f, .1f};
+		triangle.color = { .1f, .8f, .1f };
 		triangle.transform2d.translation.x = .2f;
-		triangle.transform2d.scale = {2.f, .5f};
+		triangle.transform2d.scale = { 2.f, .5f };
 		triangle.transform2d.rotation = .25f * glm::two_pi<float>();
 
 		gameObjects.push_back(std::move(triangle));
 	}
 
-	void App::createPipeline() {
+	void Renderer::createPipeline() {
 		PipelineConfigInfo pipelineConfig{};
 		LvePipeline::defaultPipelineConfigInfo(pipelineConfig);
 		pipelineConfig.renderPass = lveSwapChain->getRenderPass();
@@ -65,7 +59,7 @@ namespace lve {
 		lvePipeline = std::make_unique<LvePipeline>(lveDevice, "./shader.vert.spv", "./shader.frag.spv", pipelineConfig);
 	}
 
-	void App::recreateSwapChain() {
+	void Renderer::recreateSwapChain() {
 		auto extent = lveWindow.getExtent();
 		while (extent.width == 0 && extent.height == 0) {
 			extent = lveWindow.getExtent();
@@ -85,7 +79,7 @@ namespace lve {
 		createPipeline();
 	}
 
-	void App::createPipelineLayout() {
+	void Renderer::createPipelineLayout() {
 
 		VkPushConstantRange pushConstantRange{};
 		pushConstantRange.stageFlags = VK_SHADER_STAGE_VERTEX_BIT | VK_SHADER_STAGE_FRAGMENT_BIT;
@@ -104,12 +98,12 @@ namespace lve {
 		}
 	}
 
-	void App::freeCommandBuffers() {
+	void Renderer::freeCommandBuffers() {
 		vkFreeCommandBuffers(lveDevice.device(), lveDevice.getCommandPool(), static_cast<float>(commandBuffer.size()), commandBuffer.data());
 		commandBuffer.clear();
 	}
 
-	void App::createcommadBuffers() {
+	void Renderer::createcommadBuffers() {
 		commandBuffer.resize(lveSwapChain->imageCount());
 
 		VkCommandBufferAllocateInfo alloInfo{};
@@ -124,7 +118,7 @@ namespace lve {
 
 	}
 
-	void App::recordCommandBuffer(int imageIndex) {
+	void Renderer::recordCommandBuffer(int imageIndex) {
 
 		VkCommandBufferBeginInfo beginInfo{};
 		beginInfo.sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO;
@@ -168,12 +162,12 @@ namespace lve {
 		}
 	}
 
-	void App::renderGameObjects(VkCommandBuffer commandBuffer) {
+	void Renderer::renderGameObjects(VkCommandBuffer commandBuffer) {
 		lvePipeline->bind(commandBuffer);
 
 		for (auto& obj : gameObjects) {
 			obj.transform2d.rotation = glm::mod(obj.transform2d.rotation + 0.01f, glm::two_pi<float>());
-			
+
 			PushDataConstant push{};
 			push.offset = obj.transform2d.translation;
 			push.color = obj.color;
@@ -186,7 +180,7 @@ namespace lve {
 		}
 	};
 
-	void App::drawFrame() {
+	void Renderer::drawFrame() {
 		uint32_t imageIndex;
 		auto result = lveSwapChain->acquireNextImage(&imageIndex);
 		if (result == VK_ERROR_OUT_OF_DATE_KHR) {

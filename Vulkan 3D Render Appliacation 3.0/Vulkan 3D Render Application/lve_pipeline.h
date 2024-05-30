@@ -13,8 +13,6 @@ namespace lve {
 		PipelineConfigInfo& operator=(const PipelineConfigInfo&) = delete;
 
 		VkPipelineViewportStateCreateInfo viewportInfo;
-		VkViewport viewport;
-		VkRect2D scissor;
 		VkPipelineInputAssemblyStateCreateInfo inputAssemblyInfo;
 		VkPipelineRasterizationStateCreateInfo rasterizationInfo;
 		VkPipelineMultisampleStateCreateInfo multisampleInfo;
@@ -29,6 +27,7 @@ namespace lve {
 	};
 
 	class LvePipeline {
+	
 	public:
 		LvePipeline(MyEngineDevice &device, const std::string& vertFilepath, const std::string& fragpath, const PipelineConfigInfo& configInfo);
 		~LvePipeline();
@@ -36,11 +35,10 @@ namespace lve {
 		LvePipeline(const LvePipeline&) = delete;
 		LvePipeline& operator=(const LvePipeline&) = delete;
 
-		void bind(VkCommandBuffer commandBuffer) {
-			vkCmdBindPipeline(commandBuffer, VK_PIPELINE_BIND_POINT_GRAPHICS, graphicsPipeline);
-		}
+		void bind(VkCommandBuffer commandBuffer);
 
-		static PipelineConfigInfo defaultPipelineConfigInfo(PipelineConfigInfo&);
+		static void defaultPipelineConfigInfo(PipelineConfigInfo& configInfo);
+
 	private:
 		static std::vector<char> readFile(const std::string& filepath);
 		void createGraphicsPipeline(const std::string& vertFilepath, const std::string& fragFilepath, const PipelineConfigInfo& configInfo);

@@ -62,6 +62,8 @@ namespace lve {
         }
     }
 
+
+
     VkResult MyEngineSwapChain::acquireNextImage(uint32_t* imageIndex) {
         vkWaitForFences(
             device.device(),

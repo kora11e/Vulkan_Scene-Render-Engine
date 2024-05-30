@@ -5,7 +5,7 @@
 #include "lve_device.h"
 #include "gameObject.h"
 #include "Swapchain.h"
-
+#include "lve_renderer.h"
 
 #include <memory>
 #include <vector>
@@ -28,7 +28,7 @@ namespace lve {
 
 		LveWindow lveWindow{ WIDTH, HEIGHT, "Vulkan Renderer!"};
 		MyEngineDevice lveDevice{lveWindow};
-		Renderer lveRenderer{lveWindow, lveDevice};
+		LveRenderer lveRenderer{lveWindow, lveDevice};
 
 		std::vector<LveGameObject> gameObjects;
 	};

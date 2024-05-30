@@ -1,6 +1,7 @@
 #include "App.h"
 
 #include "lve_renderer.h"
+#include "Simple_render_system.h"
 
 #define GLM_FORCE_RADIANS
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
@@ -20,7 +21,7 @@ namespace lve {
 	App::~App() {}
 
 	void App::run() {
-		Renderer renderSystem{ lveDevice, lveRenderer.getSwapChainRenderPass() };
+		RenderSystem renderSystem{ lveDevice, lveRenderer.getSwapChainRenderPass() };
 
 		while (!lveWindow.shouldClose()) {
 		

@@ -45,6 +45,9 @@
     <ClCompile Include="lve_renderer.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="Simple_render_system.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h">
@@ -69,6 +72,9 @@
       <Filter>Pliki źródłowe</Filter>
     </ClInclude>
     <ClInclude Include="lve_renderer.h">
+      <Filter>Pliki źródłowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple_render_system.h">
       <Filter>Pliki źródłowe</Filter>
     </ClInclude>
   </ItemGroup>

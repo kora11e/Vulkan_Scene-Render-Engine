@@ -1,3 +1,12 @@
 *.db
 *.opendb
 *.ipch
+*.tlog
+*.log
+*.suo
+*.obj
+*.pdb
+*.ilk
+*.bsc
+*.sbr
+*.idb

@@ -1,42 +1,7 @@
-﻿  lve_pipeline.cpp
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_pipeline.cpp(127,32): error C2082: ponowne zdefiniowanie formalnego parametru "configInfo"
-  lve_renderer.cpp
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.h(40,25): error C2065: "WIDTH": niezadeklarowany identyfikator
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.h(40,32): error C2065: "HEIGHT": niezadeklarowany identyfikator
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.h(40,60): error C2440: "inicjowanie": nie można konwertować z "initializer list" na "lve::LveWindow &"
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.h(40,60): error C2439: „lve::Renderer::lveWindow”: Nie można zainicjować składowej
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.h(40): message : zobacz deklarację „lve::Renderer::lveWindow”
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.h(41,28): error C2440: "inicjowanie": nie można konwertować z "lve::LveWindow" na "lve::MyEngineDevice &"
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.h(41,28): error C2439: „lve::Renderer::lveDevice”: Nie można zainicjować składowej
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.h(41): message : zobacz deklarację „lve::Renderer::lveDevice”
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.h(26,4): error C3861: "assert": identyfikatora nie odnaleziono
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(15,64): error C2511: „lve::Renderer::Renderer(lve::LveWindow &,lve::MyEngineDevice &)”: Przeciążona funkcja składowa nie została znaleziona w „lve::Renderer”
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.h(14): message : zobacz deklarację „lve::Renderer”
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(16,3): error C2352: „lve::Renderer::createcommadBuffers”: Niedozwolone wywołanie niestatycznej funkcji składowej
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.h(36): message : zobacz deklarację „lve::Renderer::createcommadBuffers”
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(17,3): error C2352: „lve::Renderer::recreateSwapChain”: Niedozwolone wywołanie niestatycznej funkcji składowej
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.h(38): message : zobacz deklarację „lve::Renderer::recreateSwapChain”
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(33,70): error C2679: dwuargumentowy "=": nie znaleziono żadnego operatora, który przyjmuje prawostronny operand typu "std::unique_ptr<lve::MyEngineDevice,std::default_delete<lve::MyEngineDevice>>" (lub nie istnieje akceptowalna konwersja)
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3238,17): message : może to być „std::unique_ptr<lve::MyEngineSwapChain,std::default_delete<lve::MyEngineSwapChain>> &std::unique_ptr<lve::MyEngineSwapChain,std::default_delete<lve::MyEngineSwapChain>>::operator =(const std::unique_ptr<lve::MyEngineSwapChain,std::default_delete<lve::MyEngineSwapChain>> &)”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3135,17): message : lub       "std::unique_ptr<lve::MyEngineSwapChain,std::default_delete<lve::MyEngineSwapChain>> &std::unique_ptr<lve::MyEngineSwapChain,std::default_delete<lve::MyEngineSwapChain>>::operator =(std::nullptr_t) noexcept"
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(33,70): message : podczas próby dopasowania listy argumentów "(std::unique_ptr<lve::MyEngineSwapChain,std::default_delete<lve::MyEngineSwapChain>>, std::unique_ptr<lve::MyEngineDevice,std::default_delete<lve::MyEngineDevice>>)"
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(36,95): error C2679: dwuargumentowy "=": nie znaleziono żadnego operatora, który przyjmuje prawostronny operand typu "std::unique_ptr<lve::MyEngineDevice,std::default_delete<lve::MyEngineDevice>>" (lub nie istnieje akceptowalna konwersja)
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3238,17): message : może to być „std::unique_ptr<lve::MyEngineSwapChain,std::default_delete<lve::MyEngineSwapChain>> &std::unique_ptr<lve::MyEngineSwapChain,std::default_delete<lve::MyEngineSwapChain>>::operator =(const std::unique_ptr<lve::MyEngineSwapChain,std::default_delete<lve::MyEngineSwapChain>> &)”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3135,17): message : lub       "std::unique_ptr<lve::MyEngineSwapChain,std::default_delete<lve::MyEngineSwapChain>> &std::unique_ptr<lve::MyEngineSwapChain,std::default_delete<lve::MyEngineSwapChain>>::operator =(std::nullptr_t) noexcept"
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(36,95): message : podczas próby dopasowania listy argumentów "(std::unique_ptr<lve::MyEngineSwapChain,std::default_delete<lve::MyEngineSwapChain>>, std::unique_ptr<lve::MyEngineDevice,std::default_delete<lve::MyEngineDevice>>)"
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(45,109): warning C4244: "argument": konwersja z "float" do "uint32_t", możliwa utrata danych
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(64,17): error C2039: „recordCommandBuffer”: nie jest składową elementu „lve::Renderer”
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.h(14): message : zobacz deklarację „lve::Renderer”
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(66,21): error C2065: "commandBuffer": niezadeklarowany identyfikator
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(66,3): error C3861: "renderGameObjects": identyfikatora nie odnaleziono
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(68,22): error C2065: "commandBuffer": niezadeklarowany identyfikator
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(71,17): error C2039: „drawFrame”: nie jest składową elementu „lve::Renderer”
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.h(14): message : zobacz deklarację „lve::Renderer”
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(72,23): error C2065: "imageIndex": niezadeklarowany identyfikator
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(119,3): error C2065: "commandBiffer": niezadeklarowany identyfikator
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(139,76): warning C4244: "=": konwersja z "uint32_t" do "float", możliwa utrata danych
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_renderer.cpp(140,77): warning C4244: "=": konwersja z "uint32_t" do "float", możliwa utrata danych
-  lve_window.cpp
+﻿  App.cpp
+  lve_pipeline.cpp
+C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_pipeline.cpp(120,32): error C2082: ponowne zdefiniowanie formalnego parametru "configInfo"
+  main.cpp
+  Simple_render_system.cpp
   swapchain.cpp
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\swapchain.cpp(20,70): error C2065: "previous": niezadeklarowany identyfikator
   Generowanie kodu...

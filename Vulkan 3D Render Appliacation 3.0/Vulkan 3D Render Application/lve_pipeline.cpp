@@ -41,7 +41,6 @@ namespace lve {
 		assert(configInfo.layout != VK_NULL_HANDLE && "Cannot create graphics pipeline!");
 		assert(configInfo.renderPass != VK_NULL_HANDLE && "Cannot create render pass!");
 
-
 		auto vertCode = readFile(vertFilepath);
 		auto fragCode = readFile(fragpath);
 		
@@ -75,20 +74,13 @@ namespace lve {
 		vertexInputInfo.pVertexAttributeDescriptions = attributeDescriptions.data();
 		vertexInputInfo.pVertexBindingDescriptions = bindingDescriptions.data();
 
-		VkPipelineViewportStateCreateInfo viewportInfo{};
-		viewportInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_STATE_CREATE_INFO;
-		viewportInfo.viewportCount = 1;
-		viewportInfo.pViewports = &configInfo.viewport;
-		viewportInfo.scissorCount = 1;
-		viewportInfo.pScissors = &configInfo.scissor;
-
 		VkGraphicsPipelineCreateInfo pipelineInfo{};
 		pipelineInfo.sType = VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO;
 		pipelineInfo.stageCount = 2;
 		pipelineInfo.pStages = shaderStages;
 		pipelineInfo.pVertexInputState = &vertexInputInfo;
 		pipelineInfo.pInputAssemblyState = &configInfo.inputAssemblyInfo;
-		pipelineInfo.pViewportState = &viewportInfo;
+		pipelineInfo.pViewportState = &configInfo.viewportInfo;
 		pipelineInfo.pRasterizationState = &configInfo.rasterizationInfo;
 
 		pipelineInfo.pMultisampleState = &configInfo.multisampleInfo;
@@ -103,13 +95,9 @@ namespace lve {
 		pipelineInfo.basePipelineIndex = -1;
 		pipelineInfo.basePipelineHandle = VK_NULL_HANDLE;
 
-		
-		 
 		if (vkCreateGraphicsPipelines(lveDevice.device(), VK_NULL_HANDLE, 1, &pipelineInfo, nullptr, &graphicsPipeline) != VK_SUCCESS) {
 			throw std::runtime_error("Failed to create a graphics Pipeline!");
 		}
-
-		
 	}
 
 	void LvePipeline::craeteShaderModule(const std::vector<char>& code, VkShaderModule* shaderModule) {
@@ -123,7 +111,12 @@ namespace lve {
 		}
 	};
 
-	PipelineConfigInfo LvePipeline::defaultPipelineConfigInfo(PipelineConfigInfo& configInfo) {
+	void LvePipeline::bind(VkCommandBuffer commandBuffer) {
+		vkCmdBindPipeline(commandBuffer, VK_PIPELINE_BIND_POINT_GRAPHICS, graphicsPipeline);
+	}
+
+	void LvePipeline::defaultPipelineConfigInfo(PipelineConfigInfo& configInfo) {
+
 		PipelineConfigInfo configInfo{};
 		configInfo.inputAssemblyInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO;
 		configInfo.inputAssemblyInfo.topology = VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST;

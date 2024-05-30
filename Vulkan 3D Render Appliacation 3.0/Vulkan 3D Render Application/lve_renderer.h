@@ -9,15 +9,16 @@
 #include <stdexcept>
 #include <memory>
 #include <vector>
+#include <cassert>
 
 namespace lve {
-	class Renderer {
+	class LveRenderer {
 	public:
-		Renderer(LveWindow& window, Renderer& device);
-		~Renderer();
+		LveRenderer(LveWindow& window, MyEngineDevice& device);
+		~LveRenderer();
 
-		Renderer(const LveWindow&) = delete;
-		Renderer& operator=(const LveWindow&) = delete;
+		LveRenderer(const LveWindow&) = delete;
+		LveRenderer& operator=(const LveWindow&) = delete;
 
 		VkRenderPass getSwapChainRenderPass() const { return lveSwapChain->getRenderPass(); };
 		bool frameInProgress() { return frameStarted; };
@@ -25,6 +26,11 @@ namespace lve {
 		VkCommandBuffer getCurrentCommandBuffer() const { 
 			assert(frameStarted && "Cannot get command buffer when frame not in progress!");
 			return commandBuffer[currentImageIndex]; 
+		};
+
+		int getFrameIndex() const {
+			assert(frameStarted && "Cannot get frame index when frame is not in progress");
+			return currentFrameIndex;
 		};
 
 		VkCommandBuffer beginFrame();
@@ -37,12 +43,13 @@ namespace lve {
 		void freeCommandBuffers();
 		void recreateSwapChain();
 
-		LveWindow& lveWindow{ WIDTH, HEIGHT, "Vulkan Renderer!" };
-		MyEngineDevice& lveDevice{ lveWindow };
+		LveWindow& lveWindow;
+		MyEngineDevice& lveDevice;
 		std::unique_ptr<MyEngineSwapChain> lveSwapChain;
 		std::vector<VkCommandBuffer> commandBuffer;
 		
 		uint32_t currentImageIndex;
-		bool frameStarted;
+		int currentFrameIndex{0};
+		bool frameStarted{false};
 	};
 }

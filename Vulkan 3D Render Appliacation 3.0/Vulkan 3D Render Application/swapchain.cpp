@@ -16,7 +16,7 @@ namespace lve {
         init();
     }
 
-    MyEngineSwapChain::MyEngineSwapChain(MyEngineDevice& deviceRef, VkExtent2D extent, std::shared_ptr<MyEngineSwapChain>)
+    MyEngineSwapChain::MyEngineSwapChain(MyEngineDevice& deviceRef, VkExtent2D extent, std::shared_ptr<MyEngineSwapChain> previous)
         : device{ deviceRef }, windowExtent{ extent }, oldSwapChain{ previous } {
         init();
         oldSwapChain = nullptr;

@@ -9,20 +9,21 @@
 #include <iostream>
 #include <stdexcept>
 #include <array>
+#include <cassert>
 
 namespace lve {
 	
-	Renderer::Renderer(LveWindow& window, MyEngineDevice& device) : lveWindow{ window }, lveDevice{ device } {
+	LveRenderer::LveRenderer(LveWindow& window, MyEngineDevice& device) : lveWindow{ window }, lveDevice{ device } {
 		recreateSwapChain();
 		createcommadBuffers();
 		
 	}
 
-	Renderer::~Renderer() {
+	LveRenderer::~LveRenderer() {
 		freeCommandBuffers();
 	}
 
-	void Renderer::recreateSwapChain() {
+	void LveRenderer::recreateSwapChain() {
 		auto extent = lveWindow.getExtent();
 		while (extent.width == 0 || extent.height == 0) {
 			extent = lveWindow.getExtent();
@@ -35,7 +36,7 @@ namespace lve {
 		} else {
 			std::shared_ptr<MyEngineSwapChain> oldSwapChain = std::move(lveSwapChain);
 			lveSwapChain = std::make_unique<MyEngineSwapChain>(lveDevice, extent, oldSwapChain);
-
+			
 			if (oldSwapChain->compareSwapFormats(*lveSwapChain.get())) {
 				throw std::runtime_error("Swap chain image(or depth) format has changed!");
 			}
@@ -43,12 +44,12 @@ namespace lve {
 		//add stuff later here
 	}
 
-	void Renderer::freeCommandBuffers() {
+	void LveRenderer::freeCommandBuffers() {
 		vkFreeCommandBuffers(lveDevice.device(), lveDevice.getCommandPool(), static_cast<uint32_t>(commandBuffer.size()), commandBuffer.data());
 		commandBuffer.clear();
 	}
 
-	void Renderer::createcommadBuffers() {
+	void LveRenderer::createcommadBuffers() {
 		commandBuffer.resize(MyEngineSwapChain::MAX_FRAMES_IN_FLIGHT);
 
 		VkCommandBufferAllocateInfo alloInfo{};
@@ -63,18 +64,7 @@ namespace lve {
 
 	}
 
-	void Renderer::recordCommandBuffer(int imageIndex) {
-
-		renderGameObjects(commandBuffer[imageIndex]);
-
-		vkCmdEndRenderPass(commandBuffer[imageIndex]);
-	}
-
-	void Renderer::drawFrame() {
-		recordCommandBuffer(imageIndex);
-	}
-
-	VkCommandBuffer Renderer::beginFrame() {
+	VkCommandBuffer LveRenderer::beginFrame() {
 		
 		assert(!frameStarted && "Can't call beginFrame!");
 
@@ -101,8 +91,9 @@ namespace lve {
 		return commandBuffer;
 	};
 		
-	void Renderer::endFrame() {
+	void LveRenderer::endFrame() {
 		assert(frameStarted && "Can't call endFrame while frame is not in progress!");
+
 		auto commandBuffer = getCurrentCommandBuffer();
 		if (vkEndCommandBuffer(commandBuffer) != VK_SUCCESS) {
 			throw std::runtime_error("Failed to record command buffer!");
@@ -112,17 +103,17 @@ namespace lve {
 			lveWindow.resetWindowResizedFlag();
 			recreateSwapChain();
 			return;
-		}
-		else if (result != VK_SUCCESS) {
+		} else if (result != VK_SUCCESS) {
 			throw std::runtime_error("Failed to present swap chain image!");
 		}
 		frameStarted = false;
-		currentFrameIndex = (currentFrameIndex + 1) % MyEngineSwapChain::MMAX_FRAMES_IN_FLIGHT;
+		currentFrameIndex = (currentFrameIndex + 1) % MyEngineSwapChain::MAX_FRAMES_IN_FLIGHT;
 	};
 
-	void Renderer::beginSwapChainRenderPass(VkCommandBuffer commandBuffer) {
+	void LveRenderer::beginSwapChainRenderPass(VkCommandBuffer commandBuffer) {
 		assert(frameStarted && "Can't call beginSwapChainRenderPass");
-		assert(commandBiffer == getCurrentCommandBuffer() && "Can't begin render pass on command buffer from a different frame");
+		assert(commandBuffer == getCurrentCommandBuffer() && "Can't begin render pass on command buffer from a different frame");
+
 		VkRenderPassBeginInfo renderPassInfo{};
 		renderPassInfo.sType = VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO;
 		renderPassInfo.renderPass = lveSwapChain->getRenderPass();
@@ -132,7 +123,7 @@ namespace lve {
 		renderPassInfo.renderArea.extent = lveSwapChain->getSwapChainExtent();
 
 		std::array<VkClearValue, 2> clearValue{};
-		clearValue[0].color = { 0.1f, 0.1f, 0.1f, 0.1f };
+		clearValue[0].color = { 0.01f, 0.01f, 0.01f, 1.f };
 		clearValue[1].depthStencil = { 1.0f, 0 };         //check that later cuz something is wrong with number format
 		renderPassInfo.clearValueCount = static_cast<uint32_t>(clearValue.size());
 		renderPassInfo.pClearValues = clearValue.data();
@@ -142,8 +133,8 @@ namespace lve {
 		VkViewport viewport{};
 		viewport.x = 0.0f;
 		viewport.y = 0.0f;
-		viewport.width = static_cast<uint32_t>(lveSwapChain->getSwapChainExtent().width);
-		viewport.height = static_cast<uint32_t>(lveSwapChain->getSwapChainExtent().height);
+		viewport.width = static_cast<float>(lveSwapChain->getSwapChainExtent().width);
+		viewport.height = static_cast<float>(lveSwapChain->getSwapChainExtent().height);
 		viewport.minDepth = 0.0f;
 		viewport.maxDepth = 1.0f;
 		VkRect2D scissor{ {0, 0}, lveSwapChain->getSwapChainExtent() };
@@ -151,8 +142,11 @@ namespace lve {
 		vkCmdSetScissor(commandBuffer, 0, 1, &scissor);
 
 	};
-	void Renderer::endSwapChainRenderPass(VkCommandBuffer commandBuffer) {
-		
+	void LveRenderer::endSwapChainRenderPass(VkCommandBuffer commandBuffer) {
+		assert(frameStarted && "Can't call endSwapChainRenderPass if frame is not in progress");
+		assert(commandBuffer == getCurrentCommandBuffer() && "Can't end render pass on command buffer from a different frame");
+
+		vkCmdEndRenderPass(commandBuffer);
 	};
 	
 }

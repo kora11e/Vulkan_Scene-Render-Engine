@@ -24,25 +24,13 @@ namespace lve {
 
 		void run();
 	private:
-		void loadModels();
 		void loadgameObjects();
-		void createPipelineLayout();
-		void createPipeline();
-		void createcommadBuffers();
-		void freeCommandBuffers();
-		void drawFrame();
-		void recreateSwapChain();
-		void recordCommandBuffer(int imageIndex);
-		void renderGameObjects(VkCommandBuffer commandBuffer);
 
 		LveWindow lveWindow{ WIDTH, HEIGHT, "Vulkan Renderer!"};
 		MyEngineDevice lveDevice{lveWindow};
-		std::unique_ptr<MyEngineSwapChain> lveSwapChain;
-		std::unique_ptr<LvePipeline> lvePipeline;
-		VkPipelineLayout pipelineLayout;
-		std::vector<VkCommandBuffer> commandBuffer;
+		Renderer lveRenderer{lveWindow, lveDevice};
+
 		std::vector<LveGameObject> gameObjects;
-		std::unique_ptr<LveModel> lveModel;
 	};
 
 }

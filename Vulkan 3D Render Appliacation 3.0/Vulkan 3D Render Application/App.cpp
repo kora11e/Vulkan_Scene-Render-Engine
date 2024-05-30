@@ -9,6 +9,7 @@
 #include <iostream>
 #include <stdexcept>
 #include <array>
+#include <cassert>
 
 namespace lve {
 
@@ -57,7 +58,18 @@ namespace lve {
 		gameObjects.push_back(std::move(triangle));
 	}
 
+	void App::loadModels() {
+		std::vector<LveModel::Vertex> vertices{
+			{{0.0f, -0.5f}, {1.0f, 0.0f, 0.0f}},
+			{{0.5f, 0.5f}, {0.0f, 1.0f, 0.0f}},
+			{{-0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}} };
+		lveModel = std::make_unique<LveModel>(lveDevice, vertices);
+	}
+
 	void App::createPipeline() {
+		assert(lveSwapChain != nullptr && "Cannot create pipeline before swap chain!");
+		assert(pipelineLayout != nullptr && "Cannot create pipeline before layout!");
+
 		PipelineConfigInfo pipelineConfig{};
 		LvePipeline::defaultPipelineConfigInfo(pipelineConfig);
 		pipelineConfig.renderPass = lveSwapChain->getRenderPass();
@@ -67,19 +79,20 @@ namespace lve {
 
 	void App::recreateSwapChain() {
 		auto extent = lveWindow.getExtent();
-		while (extent.width == 0 && extent.height == 0) {
+		while (extent.width == 0 || extent.height == 0) {
 			extent = lveWindow.getExtent();
 			glfwWaitEvents();
 		}
 		vkDeviceWaitIdle(lveDevice.device());
 
 		if (lveSwapChain == nullptr) {
-			lveSwapChain = std::make_unique<MyEngineDevice>(lveDevice, extent);
+			lveSwapChain = std::make_unique<MyEngineSwapChain>(lveDevice, extent);
 		}
 		else {
-			lveSwapChain = std::make_unique<MyEngineDevice>(lveDevice, extent, std::move(lveSwapChain));
+			lveSwapChain = std::make_unique<MyEngineSwapChain>(lveDevice, extent, std::move(lveSwapChain));
 			if (lveSwapChain->imageCount() != commandBuffer.size()) {
 				freeCommandBuffers();
+				createcommadBuffers();
 			}
 		}
 		createPipeline();
@@ -121,7 +134,6 @@ namespace lve {
 		if (vkAllocateCommandBuffers(lveDevice.device(), &alloInfo, commandBuffer.data()) != VK_SUCCESS) {
 			throw std::runtime_error("Failed to allocate command buffers!");
 		}
-
 	}
 
 	void App::recordCommandBuffer(int imageIndex) {

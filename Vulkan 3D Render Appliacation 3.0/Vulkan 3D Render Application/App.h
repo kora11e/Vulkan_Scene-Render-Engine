@@ -24,6 +24,7 @@ namespace lve {
 
 		void run();
 	private:
+		void loadModels();
 		void loadgameObjects();
 		void createPipelineLayout();
 		void createPipeline();
@@ -41,6 +42,7 @@ namespace lve {
 		VkPipelineLayout pipelineLayout;
 		std::vector<VkCommandBuffer> commandBuffer;
 		std::vector<LveGameObject> gameObjects;
+		std::unique_ptr<LveModel> lveModel;
 	};
 
 }

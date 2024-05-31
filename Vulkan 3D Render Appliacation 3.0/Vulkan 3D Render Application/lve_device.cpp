@@ -76,7 +76,7 @@ namespace lve {
 
         VkApplicationInfo appInfo = {};
         appInfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
-        appInfo.pApplicationName = "LittleVulkanEngine App";
+        appInfo.pApplicationName = "Vulkan App";
         appInfo.applicationVersion = VK_MAKE_VERSION(1, 0, 0);
         appInfo.pEngineName = "No Engine";
         appInfo.engineVersion = VK_MAKE_VERSION(1, 0, 0);
@@ -122,7 +122,7 @@ namespace lve {
 
         for (const auto& device : devices) {
             if (isDeviceSuitable(device)) {
-                physicalDevice = device;
+                physicalDevice = device; // ustaw pierwsz¹ kartê graficzn¹, jako urz¹dzenie, dzia³a w 99% przypadków
                 break;
             }
         }

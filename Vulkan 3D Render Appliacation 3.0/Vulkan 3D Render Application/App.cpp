@@ -37,7 +37,8 @@ namespace lve {
 			glfwPollEvents();
 
             auto newTime = std::chrono::high_resolution_clock::now();
-
+            float frameTime = std::chrono::duration<float, std::chrono::seconds::period>(newTime - currentTime).count();
+            currentTime = newTime;
 
             //camera.setOrthographicProjection(-aspect, aspect, -1, 1, -1, 1);
             camera.setPerspectiveProjection(glm::radians(50.f), aspect, 0.1f, 10.f);

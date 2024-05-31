@@ -1,7 +1,2 @@
-﻿  App.cpp
-  lve_pipeline.cpp
-C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\lve_pipeline.cpp(120,32): error C2082: ponowne zdefiniowanie formalnego parametru "configInfo"
-  main.cpp
-  Simple_render_system.cpp
-  swapchain.cpp
-  Generowanie kodu...
+﻿  lve_model.cpp
+  Vulkan 3D Render Application.vcxproj -> C:\Users\X\Desktop\Vulkan\Vulkan_Scene-Render-Scene\Vulkan 3D Render Appliacation 3.0\Vulkan 3D Render Application\x64\Debug\Vulkan 3D Render Application.exe

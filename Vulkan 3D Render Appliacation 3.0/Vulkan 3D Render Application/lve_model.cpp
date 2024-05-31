@@ -34,11 +34,10 @@ namespace lve {
 		vkCmdBindVertexBuffers(commandBuffer, 0, 1, buffers, offsets);
 	}
 
-	std::vector<VkVertexInputBindingDescription> getBindingDescriptions() {
+	std::vector<VkVertexInputBindingDescription> LveModel::Vertex::getBindingDescription() {
 		std::vector<VkVertexInputBindingDescription> bindingDescriptions(1);
 		bindingDescriptions[0].binding = 0;
-		bindingDescriptions[0].stride = sizeof(LveModel::Vertex); //koniecznie sprawdziæ, o co tu chodzi
-		bindingDescriptions[0].binding = 0;
+		bindingDescriptions[0].stride = sizeof(Vertex); //koniecznie sprawdziæ, o co tu chodzi
 		bindingDescriptions[0].inputRate = VK_VERTEX_INPUT_RATE_VERTEX;
 		return bindingDescriptions;
 	}

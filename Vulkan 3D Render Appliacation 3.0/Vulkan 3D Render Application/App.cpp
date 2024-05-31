@@ -1,5 +1,6 @@
 #include "App.h"
 
+#include "lve_window.h"
 #include "lve_renderer.h"
 #include "Simple_render_system.h"
 #include "lve_camera.h"
@@ -29,6 +30,8 @@ namespace lve {
         //camera.setViewDirection(glm::vec3(0.f), glm::vec3(.5f, 0.f, 1.f));
         camera.setViewTarget(glm::vec3(-1.f, -2.f, 2.f), glm::vec3(0.f, 0.f, 2.5f));
 
+        auto viewerObject = LveGameObject::createGameObject();
+
         auto currentTime = std::chrono::high_resolution_clock::now();
 
 		while (!lveWindow.shouldClose()) {
@@ -39,6 +42,11 @@ namespace lve {
             auto newTime = std::chrono::high_resolution_clock::now();
             float frameTime = std::chrono::duration<float, std::chrono::seconds::period>(newTime - currentTime).count();
             currentTime = newTime;
+
+            frameTime = glm::min(frameTime, MAX_FRAME_TIME);
+
+            camera.moveInPlaneXZ(lveWindow.getGLFWwindow(), frameTime, viewerObject);
+            camera.setViewYXZ(viewerObject.transform.translation, viewerObject.transform.rotation);
 
             //camera.setOrthographicProjection(-aspect, aspect, -1, 1, -1, 1);
             camera.setPerspectiveProjection(glm::radians(50.f), aspect, 0.1f, 10.f);
@@ -56,7 +64,9 @@ namespace lve {
 	}
 
     std::unique_ptr<LveModel> createCubeModel(LveDevice& device, glm::vec3 offset) {
-        std::vector<LveModel::Vertex> vertices{
+
+        LveModel::Builder modelBuilder{};
+        modelBuilder.vertices = {
 
             // left face (white)
             {{-.5f, -.5f, -.5f}, {.9f, .9f, .9f}},
@@ -110,7 +120,7 @@ namespace lve {
         for (auto& v : vertices) {
             v.position += offset;
         }
-        return std::make_unique<LveModel>(device, vertices);
+        return std::make_unique<LveModel>(device, modelBuilder);
     }
 
 	void App::loadgameObjects() {

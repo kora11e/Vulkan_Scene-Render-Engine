@@ -157,6 +157,8 @@
   <ItemGroup>
     <ClCompile Include="App.cpp" />
     <ClCompile Include="gameObject.cpp" />
+    <ClCompile Include="keyboard_movement.cpp" />
+    <ClCompile Include="lve_camera.cpp" />
     <ClCompile Include="lve_device.cpp" />
     <ClCompile Include="lve_model.cpp" />
     <ClCompile Include="lve_pipeline.cpp" />
@@ -169,6 +171,8 @@
   <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="gameObject.h" />
+    <ClInclude Include="keyboard_movement.h" />
+    <ClInclude Include="lve_camera.h" />
     <ClInclude Include="lve_device.h" />
     <ClInclude Include="lve_model.h" />
     <ClInclude Include="lve_pipeline.h" />

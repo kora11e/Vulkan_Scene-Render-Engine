@@ -23,7 +23,13 @@ namespace lve {
 		glm::vec3 moveDir{0.f};
 		if (glfwGetKey(window, keys.moveForward) == GLFW_PRESS) moveDir += forwardDir;
 		if (glfwGetKey(window, keys.moveBackward) == GLFW_PRESS) moveDir -= forwardDir;
-		if (glfwGetKey(window, keys.lookRight) == GLFW_PRESS) moveDir += forwardDir;
-		if (glfwGetKey(window, keys.lookRight) == GLFW_PRESS) moveDir += forwardDir;
+		if (glfwGetKey(window, keys.moveRight) == GLFW_PRESS) moveDir += rightDir;
+		if (glfwGetKey(window, keys.moveLeft) == GLFW_PRESS) moveDir -= rightDir;
+		if (glfwGetKey(window, keys.moveUp) == GLFW_PRESS) moveDir += upDir;
+		if (glfwGetKey(window, keys.moveDown) == GLFW_PRESS) moveDir -= upDir;
+
+		if (glm::dot(moveDir, moveDir) > std::numeric_limits<float>::epsilon()) {
+			gameObject.transform.translation += lookSpeed * dt * glm::normalize(moveDir);
+		}
 	}
 }

@@ -5,14 +5,22 @@
 
 namespace lve {
 
-	LveModel::LveModel(MyEngineDevice& device, const std::vector<Vertex>& vertices) : lveDevice{ device } {
-		createVertexBuffers(vertices);
+	LveModel::LveModel(MyEngineDevice& device, const LveModel::Builder& builder) : lveDevice{ device } {
+		createVertexBuffers(builder.vertices);
+		createIndexBuffers(builder.indices);
 	};
 
 	LveModel::~LveModel() {
 		vkDestroyBuffer(lveDevice.device(), vertexBuffer, nullptr);
 		vkFreeMemory(lveDevice.device(), vertexBufferMemory, nullptr);
+		
+		if (hasIndexBuffer) {
+			vkDestroyBuffer(lveDevice.device(), indexBuffer, nullptr);
+			vkFreeMemory(lveDevice.device(), indexBufferMemory, nullptr);
+		}
 	}
+
+
 	void LveModel::createVertexBuffers(const std::vector<Vertex>& vertices) {
 		vertexCount = static_cast<uint32_t>(vertices.size());
 		assert(vertexCount >= 3 && "Vertex Count must be at least 3");
@@ -24,14 +32,42 @@ namespace lve {
 		memcpy(data, vertices.data(), static_cast<uint32_t>(bufferSize));
 		vkUnmapMemory(lveDevice.device(), vertexBufferMemory);
 	}
+
+	void LveModel::createIndexBuffers(const std::vector<uint32_t>& indices) {
+		indexCount = static_cast<uint32_t>(indices.size());
+		hasIndexBuffer = indexCount > 0;
+
+		if (!hasIndexBuffer) {
+			return;
+		}
+
+		assert(vertexCount >= 3 && "Vertex Count must be at least 3");
+		VkDeviceSize bufferSize = sizeof(indices[0]) * indexCount;
+
+		lveDevice.createBuffer(bufferSize, VK_BUFFER_USAGE_INDEX_BUFFER_BIT, VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT, indexBuffer, indexBufferMemory);
+		void* data;
+		vkMapMemory(lveDevice.device(), indexBufferMemory, 0, bufferSize, 0, &data);
+		memcpy(data, indices.data(), static_cast<uint32_t>(bufferSize));
+		vkUnmapMemory(lveDevice.device(), indexBufferMemory);
+	}
+
 	void LveModel::draw(VkCommandBuffer commandBuffer) {
-		vkCmdDraw(commandBuffer, vertexCount, 1, 0, 0);
+		if (hasIndexBuffer) {
+			vkCmdDraw(commandBuffer, indexCount, 1, 0, 0, 0);
+		}
+		else {
+			vkCmdDraw(commandBuffer, vertexCount, 1, 0, 0);
+		}
 	}
 
 	void LveModel::bind(VkCommandBuffer commandBuffer) {
-		VkBuffer buffers[] = {vertexBuffer};
+		VkBuffer buffers[] = {indexBuffer};
 		VkDeviceSize offsets[] = {0};
 		vkCmdBindVertexBuffers(commandBuffer, 0, 1, buffers, offsets);
+
+		if (hasIndexBuffer) {
+			vkCmdBindIndexBuffer(commandBuffer, indexBuffer, 0, VK_INDEX_TYPE_UINT32);
+		}
 	}
 
 	std::vector<VkVertexInputBindingDescription> LveModel::Vertex::getBindingDescription() {

@@ -4,6 +4,8 @@
 #include "lve_renderer.h"
 #include "Simple_render_system.h"
 #include "lve_camera.h"
+#include "lve_Buffer.h"
+#include "lve_Descriptors.h"
 
 #define GLM_FORCE_RADIANS
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
@@ -17,15 +19,69 @@
 #include <array>
 #include <cassert>
 #include <chrono>
+#include <numeric>
+#include <memory>
 
 namespace lve {
 
-	App::App() { loadgameObjects(); }
+    struct GlobalUbo {
+        glm::mat4 projection{1.f};
+        glm::mat4 view{ 1.f };
+        glm::vec4 ambientLightColor{1.f, 1.f, 1.f, .02f};
+        glm::vec3 lightPosition{-1.f};
+        alignas(16) glm::vec4 lightColor{1.f};
+    };
+
+	App::App() { 
+        auto globalPool = LveDescriptorPool::Builder(lveDevice) // typ siê zepsu³ czy coœ idk
+            .setMaxSets(MyEngineSwapChain::MAX_FRAMES_IN_FLIGHT)
+            .addPoolSize(VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, MyEngineSwapChain::MAX_FRAMES_IN_FLIGHT)
+            .addPoolSize(VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, MyEngineSwapChain::MAX_FRAMES_IN_FLIGHT)
+            .build();
+        loadgameObjects();
+        
+    }
 
 	App::~App() {}
 
 	void App::run() {
-		RenderSystem renderSystem{ lveDevice, lveRenderer.getSwapChainRenderPass() };
+    
+        std::vector<std::unique_ptr<LveBuffer>> uboBuffers(MyEngineSwapChain::MAX_FRAMES_IN_FLIGHT);
+        for (int i = 0; i < uboBuffers.size(); i++) {
+            uboBuffers[i] = std::make_unique<LveBuffer>(
+                    lveDevice,
+                    sizeof(GlobalUbo),
+                    MyEngineSwapChain::MAX_FRAMES_IN_FLIGHT,
+                    VK_BUFFER_USAGE_UNIFORM_BUFFER_BIT,
+                    VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT |
+                );
+            uboBuffers[i]->map();
+        }
+
+        auto globalSetLayout = LveDescriptorSetLayout::Builder(lveDevice)
+            .addBinding(0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, VK_SHADER_STAGE_ALL_GRAPHICS)
+            .build();
+
+        std::vector<VkDescriptorSet> globalDescriptorSets(MyEngineSwapChain::MAX_FRAMES_IN_FLIGHT);
+        for (int i = 0; i < globalDescriptorSets.size(), i++) {
+            auto bufferInfo = uboBuffers[i]->descriptorInfo();
+            LveDescriptorWriter(*globalSetLayout, *globalPool)
+                .writeBuffer(0, &bufferInfo)
+                .build(globalDescriptorSets[i]);
+        }
+
+        LveBuffer globalUboBuffer{
+            lveDevice,
+            sizeof(GlobalUbo),
+            MyEngineSwapChain::MAX_FRAMES_IN_FLIGHT,
+            VK_BUFFER_USAGE_UNIFORM_BUFFER_BIT,
+            VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT,
+            lveDevice.properties.limits.minUniformBufferOffsetAlignment,
+        };
+        globalUboBuffer.map();
+
+
+		RenderSystem renderSystem{ lveDevice, lveRenderer.getSwapChainRenderPass(), globalSetLayout->getDescriptorSetLayout() };
         LveCamera camera{};
         //camera.setViewDirection(glm::vec3(0.f), glm::vec3(.5f, 0.f, 1.f));
         camera.setViewTarget(glm::vec3(-1.f, -2.f, 2.f), glm::vec3(0.f, 0.f, 2.5f));
@@ -53,8 +109,25 @@ namespace lve {
 
 
 			if (auto commandBuffer = lveRenderer.beginFrame()) {
+
+                int frameIndex = lveRenderer.getFrameIndex();
+
+                FrameInfo frameInfo{
+                    frameIndex,
+                    frameTime,
+                    commandBuffer,
+                    camera,
+                    globalDescriptorSets[frameIndex],
+                    gameObjecs
+                };
+
+                GlobalUbo ubo{};
+                ubo.projectionView = camera.getProjection() * camera.getView();
+                uboBuffers[frameIndex]->writeToBuffer(&ubo);
+                uboBuffers[frameIndex]->flush();
+
 				lveRenderer.beginSwapChainRenderPass(commandBuffer);
-				renderSystem.renderGameObjects(commandBuffer, gameObjects, camera);
+				renderSystem.renderGameObjects(frameInfo);
 				lveRenderer.endSwapChainRenderPass(commandBuffer);
 				lveRenderer.endFrame();
 			}
@@ -63,73 +136,29 @@ namespace lve {
 		vkDeviceWaitIdle(lveDevice.device());
 	}
 
-    std::unique_ptr<LveModel> createCubeModel(LveDevice& device, glm::vec3 offset) {
-
-        LveModel::Builder modelBuilder{};
-        modelBuilder.vertices = {
-
-            // left face (white)
-            {{-.5f, -.5f, -.5f}, {.9f, .9f, .9f}},
-            {{-.5f, .5f, .5f}, {.9f, .9f, .9f}},
-            {{-.5f, -.5f, .5f}, {.9f, .9f, .9f}},
-            {{-.5f, -.5f, -.5f}, {.9f, .9f, .9f}},
-            {{-.5f, .5f, -.5f}, {.9f, .9f, .9f}},
-            {{-.5f, .5f, .5f}, {.9f, .9f, .9f}},
-
-            // right face (yellow)
-            {{.5f, -.5f, -.5f}, {.8f, .8f, .1f}},
-            {{.5f, .5f, .5f}, {.8f, .8f, .1f}},
-            {{.5f, -.5f, .5f}, {.8f, .8f, .1f}},
-            {{.5f, -.5f, -.5f}, {.8f, .8f, .1f}},
-            {{.5f, .5f, -.5f}, {.8f, .8f, .1f}},
-            {{.5f, .5f, .5f}, {.8f, .8f, .1f}},
-
-            // top face (orange, remember y axis points down)
-            {{-.5f, -.5f, -.5f}, {.9f, .6f, .1f}},
-            {{.5f, -.5f, .5f}, {.9f, .6f, .1f}},
-            {{-.5f, -.5f, .5f}, {.9f, .6f, .1f}},
-            {{-.5f, -.5f, -.5f}, {.9f, .6f, .1f}},
-            {{.5f, -.5f, -.5f}, {.9f, .6f, .1f}},
-            {{.5f, -.5f, .5f}, {.9f, .6f, .1f}},
-
-            // bottom face (red)
-            {{-.5f, .5f, -.5f}, {.8f, .1f, .1f}},
-            {{.5f, .5f, .5f}, {.8f, .1f, .1f}},
-            {{-.5f, .5f, .5f}, {.8f, .1f, .1f}},
-            {{-.5f, .5f, -.5f}, {.8f, .1f, .1f}},
-            {{.5f, .5f, -.5f}, {.8f, .1f, .1f}},
-            {{.5f, .5f, .5f}, {.8f, .1f, .1f}},
-
-            // nose face (blue)
-            {{-.5f, -.5f, 0.5f}, {.1f, .1f, .8f}},
-            {{.5f, .5f, 0.5f}, {.1f, .1f, .8f}},
-            {{-.5f, .5f, 0.5f}, {.1f, .1f, .8f}},
-            {{-.5f, -.5f, 0.5f}, {.1f, .1f, .8f}},
-            {{.5f, -.5f, 0.5f}, {.1f, .1f, .8f}},
-            {{.5f, .5f, 0.5f}, {.1f, .1f, .8f}},
-
-            // tail face (green)
-            {{-.5f, -.5f, -0.5f}, {.1f, .8f, .1f}},
-            {{.5f, .5f, -0.5f}, {.1f, .8f, .1f}},
-            {{-.5f, .5f, -0.5f}, {.1f, .8f, .1f}},
-            {{-.5f, -.5f, -0.5f}, {.1f, .8f, .1f}},
-            {{.5f, -.5f, -0.5f}, {.1f, .8f, .1f}},
-            {{.5f, .5f, -0.5f}, {.1f, .8f, .1f}},
-
-        };
-        for (auto& v : vertices) {
-            v.position += offset;
-        }
-        return std::make_unique<LveModel>(device, modelBuilder);
-    }
-
 	void App::loadgameObjects() {
-        std::shared_ptr<LveModel> lveModel = createCubeModel(lveDevice, {0.f, 0.f, 0.f});
+        std::shared_ptr<LveModel> lveModel = LveModel::createModelFromFile(lveDevice, "./smooth_vase.obj");
 
-        auto cube = LveGameObject::createGameObject();
-        cube.model = lveModel;
-        cube.transform.translation = {0.f, 0.f, .5f};
-        cube.transform.scale = {.5f, .5f, .5f};
-        gameObjects.push_back(std::move(cube));
-	}
+        auto smoothVase = LveGameObject::createGameObject();
+        smoothVase.model = lveModel;
+        smoothVase.transform.translation = {0.f, 0.f, .5f};
+        smoothVase.transform.scale = {.5f, .5f, .5f};
+        gameObjecs.emplace(smoothVase.getId(),std::move(smoothVase));
+
+        lveModel = LveModel::createModelFromFile(lveDevice, "./Quad.obj");
+
+        auto Quad = LveGameObject::createGameObject();
+        Quad.model = lveModel;
+        Quad.transform.translation = { 0.f, 0.f, 1.5f };
+        Quad.transform.scale = { .5f, .5f, .5f };
+        gameObjecs.emplace(Quad.getId(), std::move(Quad));
+
+        lveModel = LveModel::createModelFromFile(lveDevice, "./przybornik.obj");
+
+        auto przybornik = LveGameObject::createGameObject();
+        przybornik.model = lveModel;
+        przybornik.transform.translation = { 0.f, 0.f, -1.5f };
+        przybornik.transform.scale = { .5f, .5f, .5f };
+        gameObjecs.emplace(przybornik.getId(), std::move(przybornik));
+    }
 }

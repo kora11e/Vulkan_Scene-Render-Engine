@@ -2,6 +2,24 @@
 
 #include <cassert>
 #include <cstring>
+#include <iostream>
+#include "lve_utils.h"
+#define GLM_ENABLE_EXPERIMENTAL
+#define TINYOBJLOADER_IMPLEMENTATION
+#include <tiny_obj_loader.h>
+#include <glm/gtx/hash.hpp>
+#include <unordered_map>
+
+namespace std {
+	template <>
+	struct hash<lve::LveModel::Vertex> {
+		size_t operator() (lve::LveModel::Vertex const& vertex) const {
+			size_t seed = 0;
+			lve::hashCombine(seed, vertex.position, vertex.color, vertex.normal, vertex.uv);
+			return seed;
+		}
+	};
+}
 
 namespace lve {
 
@@ -10,27 +28,38 @@ namespace lve {
 		createIndexBuffers(builder.indices);
 	};
 
-	LveModel::~LveModel() {
-		vkDestroyBuffer(lveDevice.device(), vertexBuffer, nullptr);
-		vkFreeMemory(lveDevice.device(), vertexBufferMemory, nullptr);
-		
-		if (hasIndexBuffer) {
-			vkDestroyBuffer(lveDevice.device(), indexBuffer, nullptr);
-			vkFreeMemory(lveDevice.device(), indexBufferMemory, nullptr);
-		}
-	}
+	LveModel::~LveModel() {}
 
+	std::unique_ptr<LveModel> createModelFromFile(MyEngineDevice& device, const std::string& filepath) {
+		LveModel::Builder builder{};
+		builder.loadModel(filepath);
+		std::cout << "Vertex Count: " << builder.vertices.size();
+		return std::make_unique<LveModel>(device, builder);
+	};
 
 	void LveModel::createVertexBuffers(const std::vector<Vertex>& vertices) {
 		vertexCount = static_cast<uint32_t>(vertices.size());
 		assert(vertexCount >= 3 && "Vertex Count must be at least 3");
 		VkDeviceSize bufferSize = sizeof(vertices[0]) * vertexCount;
+		uint32_t vertexSize = sizeof(vertices[0]);
 
-		lveDevice.createBuffer(bufferSize, VK_BUFFER_USAGE_VERTEX_BUFFER_BIT, VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT, vertexBuffer, vertexBufferMemory);
-		void* data;
-		vkMapMemory(lveDevice.device(), vertexBufferMemory, 0, bufferSize, 0, &data);
-		memcpy(data, vertices.data(), static_cast<uint32_t>(bufferSize));
-		vkUnmapMemory(lveDevice.device(), vertexBufferMemory);
+		LveBuffer stagingBuffer{
+			lveDevice,
+			vertexSize,
+			vertexCount,
+			VK_BUFFER_USAGE_TRANSFER_SRC_BIT,
+			VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT,
+		}
+
+		stagingBuffer.map();
+		stagingBuffer.writeToBuffer((void*)vertices.data());
+
+		vertexBuffer = std::make_unique<LveBuffer>(lveDevice, vertexSize, vertexCount, VK_BUFFER_USAGE_VERTEX_BUFFER_BIT | VK_BUFFER_USAGE_TRANSFER_DST_BIT, VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT);
+
+		lveDevice.copyBuffer(stagingBuffer.getBuffer(), vertexBuffer->getBuffer(), bufferSize);
+
+		vkDestroyBuffer(lveDevice.device(), stagingBuffer, nullptr);
+		vkFreeMemory(lveDevice.device(), stagingBufferMemory, nullptr);
 	}
 
 	void LveModel::createIndexBuffers(const std::vector<uint32_t>& indices) {
@@ -44,11 +73,29 @@ namespace lve {
 		assert(vertexCount >= 3 && "Vertex Count must be at least 3");
 		VkDeviceSize bufferSize = sizeof(indices[0]) * indexCount;
 
-		lveDevice.createBuffer(bufferSize, VK_BUFFER_USAGE_INDEX_BUFFER_BIT, VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT, indexBuffer, indexBufferMemory);
-		void* data;
-		vkMapMemory(lveDevice.device(), indexBufferMemory, 0, bufferSize, 0, &data);
-		memcpy(data, indices.data(), static_cast<uint32_t>(bufferSize));
-		vkUnmapMemory(lveDevice.device(), indexBufferMemory);
+		uint32_t indexSize = sizeof(indices[0]);
+
+		LveBuffer stagingBuffer{
+			lveDevice, 
+			indexSize,
+			indexCount,
+			VK_BUFFER_USAGE_TRANSFER_SRC_BIT, 
+			VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT
+		}
+
+		stagingBuffer.map();
+		stagingBuffer.writeToBuffer((void*) indices.data());
+
+		indexBuffer = std::make_unique<LveBuffer>(
+			lveDevice,
+			indexSize,
+			indexCount,
+			VK_BUFFER_USAGE_VERTEX_BUFFER_BIT | VK_BUFFER_USAGE_TRANSFER_DST_BIT, 
+			VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT
+			);
+
+		lveDevice.copyBuffer(stagingBuffer.getBuffer(), indexBuffer->getBuffer(), bufferSize);
+
 	}
 
 	void LveModel::draw(VkCommandBuffer commandBuffer) {
@@ -61,12 +108,12 @@ namespace lve {
 	}
 
 	void LveModel::bind(VkCommandBuffer commandBuffer) {
-		VkBuffer buffers[] = {indexBuffer};
+		VkBuffer buffers[] = {indexBuffer->getBuffer()};
 		VkDeviceSize offsets[] = {0};
 		vkCmdBindVertexBuffers(commandBuffer, 0, 1, buffers, offsets);
 
 		if (hasIndexBuffer) {
-			vkCmdBindIndexBuffer(commandBuffer, indexBuffer, 0, VK_INDEX_TYPE_UINT32);
+			vkCmdBindIndexBuffer(commandBuffer, indexBuffer->getBuffer(), 0, VK_INDEX_TYPE_UINT32);
 		}
 	}
 
@@ -79,17 +126,68 @@ namespace lve {
 	}
 
 	std::vector<VkVertexInputAttributeDescription> LveModel::Vertex::getAttributeDescription() {
-		std::vector<VkVertexInputAttributeDescription> attributeDescriptions(2);
-		attributeDescriptions[0].binding = 0;
-		attributeDescriptions[0].location = 0;
-		attributeDescriptions[0].format = VK_FORMAT_R32G32B32_SFLOAT;
-		attributeDescriptions[0].offset = offsetof(Vertex, position);
+		std::vector<VkVertexInputAttributeDescription> attributeDescriptions{};
 
-		attributeDescriptions[1].binding = 0;
-		attributeDescriptions[1].location = 1;
-		attributeDescriptions[1].format = VK_FORMAT_R32G32B32_SFLOAT;
-		attributeDescriptions[1].offset = offsetof(Vertex, color);
+		attributeDescriptions.push_back({ 0, 0, VK_FORMAT_R32G32B32_SFLOAT, offsetof(Vertex, position) });
+		attributeDescriptions.push_back({ 1, 0, VK_FORMAT_R32G32B32_SFLOAT, offsetof(Vertex, color) });
+		attributeDescriptions.push_back({ 2, 0, VK_FORMAT_R32G32B32_SFLOAT, offsetof(Vertex, normal) });
+		attributeDescriptions.push_back({ 3, 0, VK_FORMAT_R32G32_SFLOAT, offsetof(Vertex, uv) });
 							  
 		return attributeDescriptions;
+	}
+
+	void LveModel::Builder::loadModel(const std::string& filepath) {
+		tinyobj::attrib_t attrib;
+		std::vector<tinyobj::shape_t> shapes;
+		std::vector<tinyobj::material_t> materials;
+		std::string warn, err;
+
+		if (!tinyobj::LoadObj(&attrib, &shapes, &materials, &warn, &err, filepath.c_str())) {
+			throw std::runtime_error(warn + err);
+		}
+
+		vertices.clear();
+		indices.clear();
+
+		std::unordered_map<Vertex, uint32_t> uniqueVertices{};
+		for (const auto &shape:shapes) {
+			for (const auto &index:shape.mesh.indices) {
+				Vertex vertex{};
+				
+				if (index.vertex_index >= 0) {
+					vertex.position = {
+						attrib.vertices[3 * index.vertex_index + 0];
+						attrib.vertices[3 * index.vertex_index + 1];
+						attrib.vertices[3 * index.vertex_index + 2];
+					};
+					vertex.color = {
+						attrib.colors[3 * index.vertex_index + 0];
+						attrib.colors[3 * index.vertex_index + 1];
+						attrib.colors[3 * index.vertex_index + 2];
+					};
+				}
+				
+				if (index.normal_index >= 0) {
+					vertex.normal = {
+						attrib.vertices[3 * index.vertex_index + 0];
+						attrib.vertices[3 * index.vertex_index + 1];
+						attrib.vertices[3 * index.vertex_index + 2];
+					}
+				}
+
+				if (index.texcoord_index >= 0) {
+					vertex.uv = {
+						attrib.vertices[2 * index.vertex_index + 0];
+						attrib.vertices[2 * index.vertex_index + 1];
+					}
+				}
+
+				if (uniqueVertices.count(vertex) == 0) {
+					uniqueVertices[vertex] = static_cast<uint32_t>(vertices.size();
+					vertices.push_back(vertex);
+				}
+				indices.push_back(uniqueVertices[vertex]);
+			}
+		}
 	}
 }

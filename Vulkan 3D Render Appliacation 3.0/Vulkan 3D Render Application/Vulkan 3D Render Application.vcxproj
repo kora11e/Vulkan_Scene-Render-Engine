@@ -89,7 +89,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\X\Documents\Visual Studio 2019\Libraries\glm-master;C:\VulkanSDK\1.3.275.0\Include;C:\Users\X\Documents\Visual Studio 2019\Libraries\glfw-3.4.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\X\Documents\Visual Studio 2019\Libraries\glm-master;C:\VulkanSDK\1.3.275.0\Include;C:\Users\X\Documents\Visual Studio 2019\Libraries\tinyobjloader-release\tinyobjloader-release;C:\Users\X\Documents\Visual Studio 2019\Libraries\glfw-3.4.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -107,7 +107,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\X\Documents\Visual Studio 2019\Libraries\glm-master;C:\VulkanSDK\1.3.275.0\Include;C:\Users\X\Documents\Visual Studio 2019\Libraries\glfw-3.4.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\X\Documents\Visual Studio 2019\Libraries\glm-master;C:\VulkanSDK\1.3.275.0\Include;C:\Users\X\Documents\Visual Studio 2019\Libraries\tinyobjloader-release\tinyobjloader-release;C:\Users\X\Documents\Visual Studio 2019\Libraries\glfw-3.4.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,7 +125,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\X\Documents\Visual Studio 2019\Libraries\glm-master;C:\VulkanSDK\1.3.275.0\Include;C:\Users\X\Documents\Visual Studio 2019\Libraries\glfw-3.4.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\X\Documents\Visual Studio 2019\Libraries\glm-master;C:\VulkanSDK\1.3.275.0\Include;C:\Users\X\Documents\Visual Studio 2019\Libraries\tinyobjloader-release\tinyobjloader-release;C:\Users\X\Documents\Visual Studio 2019\Libraries\glfw-3.4.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -143,7 +143,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\X\Documents\Visual Studio 2019\Libraries\glm-master;C:\VulkanSDK\1.3.275.0\Include;C:\Users\X\Documents\Visual Studio 2019\Libraries\glfw-3.4.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\X\Documents\Visual Studio 2019\Libraries\glm-master;C:\VulkanSDK\1.3.275.0\Include;C:\Users\X\Documents\Visual Studio 2019\Libraries\tinyobjloader-release\tinyobjloader-release;C:\Users\X\Documents\Visual Studio 2019\Libraries\glfw-3.4.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -158,7 +158,9 @@
     <ClCompile Include="App.cpp" />
     <ClCompile Include="gameObject.cpp" />
     <ClCompile Include="keyboard_movement.cpp" />
+    <ClCompile Include="lve_Buffer.cpp" />
     <ClCompile Include="lve_camera.cpp" />
+    <ClCompile Include="lve_Descriptors.cpp" />
     <ClCompile Include="lve_device.cpp" />
     <ClCompile Include="lve_model.cpp" />
     <ClCompile Include="lve_pipeline.cpp" />
@@ -172,11 +174,15 @@
     <ClInclude Include="App.h" />
     <ClInclude Include="gameObject.h" />
     <ClInclude Include="keyboard_movement.h" />
+    <ClInclude Include="lve_Buffer.h" />
     <ClInclude Include="lve_camera.h" />
+    <ClInclude Include="lve_Descriptors.h" />
     <ClInclude Include="lve_device.h" />
+    <ClInclude Include="lve_frame_info.h" />
     <ClInclude Include="lve_model.h" />
     <ClInclude Include="lve_pipeline.h" />
     <ClInclude Include="lve_renderer.h" />
+    <ClInclude Include="lve_utils.h" />
     <ClInclude Include="lve_window.h" />
     <ClInclude Include="Simple_render_system.h" />
     <ClInclude Include="Swapchain.h" />

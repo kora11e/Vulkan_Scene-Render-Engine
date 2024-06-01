@@ -54,6 +54,12 @@
     <ClCompile Include="keyboard_movement.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="lve_Buffer.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="lve_Descriptors.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h">
@@ -87,6 +93,18 @@
       <Filter>Pliki źródłowe</Filter>
     </ClInclude>
     <ClInclude Include="keyboard_movement.h">
+      <Filter>Pliki źródłowe</Filter>
+    </ClInclude>
+    <ClInclude Include="lve_utils.h">
+      <Filter>Pliki źródłowe</Filter>
+    </ClInclude>
+    <ClInclude Include="lve_Buffer.h">
+      <Filter>Pliki źródłowe</Filter>
+    </ClInclude>
+    <ClInclude Include="lve_frame_info.h">
+      <Filter>Pliki źródłowe</Filter>
+    </ClInclude>
+    <ClInclude Include="lve_Descriptors.h">
       <Filter>Pliki źródłowe</Filter>
     </ClInclude>
   </ItemGroup>

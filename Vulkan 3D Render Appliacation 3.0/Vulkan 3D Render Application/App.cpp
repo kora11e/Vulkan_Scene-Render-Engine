@@ -6,6 +6,7 @@
 #include "lve_camera.h"
 #include "lve_Buffer.h"
 #include "lve_Descriptors.h"
+#include "point_light_system.h"
 
 #define GLM_FORCE_RADIANS
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
@@ -82,6 +83,10 @@ namespace lve {
 
 
 		RenderSystem renderSystem{ lveDevice, lveRenderer.getSwapChainRenderPass(), globalSetLayout->getDescriptorSetLayout() };
+
+        PointLightSystem pointLightSystem{ lveDevice, lveRenderer.getSwapChainRenderPass(), globalSetLayout->getDescriptorSetLayout() };
+
+
         LveCamera camera{};
         //camera.setViewDirection(glm::vec3(0.f), glm::vec3(.5f, 0.f, 1.f));
         camera.setViewTarget(glm::vec3(-1.f, -2.f, 2.f), glm::vec3(0.f, 0.f, 2.5f));
@@ -122,12 +127,14 @@ namespace lve {
                 };
 
                 GlobalUbo ubo{};
-                ubo.projectionView = camera.getProjection() * camera.getView();
+                ubo.projection = camera.getProjection();
+                ubo.view = camera.getView();
                 uboBuffers[frameIndex]->writeToBuffer(&ubo);
                 uboBuffers[frameIndex]->flush();
 
 				lveRenderer.beginSwapChainRenderPass(commandBuffer);
 				renderSystem.renderGameObjects(frameInfo);
+                pointLightSystem.render(frameInfo);
 				lveRenderer.endSwapChainRenderPass(commandBuffer);
 				lveRenderer.endFrame();
 			}

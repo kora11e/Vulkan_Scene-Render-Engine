@@ -60,6 +60,9 @@
     <ClCompile Include="lve_Descriptors.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="point_light_system.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h">
@@ -107,6 +110,9 @@
     <ClInclude Include="lve_Descriptors.h">
       <Filter>Pliki źródłowe</Filter>
     </ClInclude>
+    <ClInclude Include="point_light_system.h">
+      <Filter>Pliki źródłowe</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="shader.vert">
@@ -116,6 +122,12 @@
       <Filter>Pliki źródłowe</Filter>
     </None>
     <None Include="compile.bat">
+      <Filter>Pliki źródłowe</Filter>
+    </None>
+    <None Include="pointLightShader.frag">
+      <Filter>Pliki źródłowe</Filter>
+    </None>
+    <None Include="pointLightShader.vert">
       <Filter>Pliki źródłowe</Filter>
     </None>
   </ItemGroup>

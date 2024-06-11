@@ -10,6 +10,7 @@
 
 #define GLM_FORCE_RADIANS
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
+#define GLM_FORCE
 #include <glm/glm.hpp>
 #include <glm/gtc/constants.hpp>
 #include "glm/gtc/matrix_transform.hpp"
@@ -39,8 +40,7 @@ namespace lve {
             .addPoolSize(VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, MyEngineSwapChain::MAX_FRAMES_IN_FLIGHT)
             .addPoolSize(VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, MyEngineSwapChain::MAX_FRAMES_IN_FLIGHT)
             .build();
-        loadgameObjects();
-        
+        loadgameObjects();    
     }
 
 	App::~App() {}

@@ -6,6 +6,10 @@ https://docs.vulkan.org/tutorial/latest/00_Introduction.html
 
 The project implements all core concepts of the Vulkan API.
 
+<h1>Warning!</h1>
+
+The proejct is currently under development and is not fully functional.
+
 ### How to run?
 
 To open the project perform following steps:
@@ -20,4 +24,4 @@ To open the project perform following steps:
 
 
 ### Developer Notes
-
+TBA

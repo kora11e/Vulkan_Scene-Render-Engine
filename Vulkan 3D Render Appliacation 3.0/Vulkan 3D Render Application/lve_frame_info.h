@@ -28,6 +28,6 @@ namespace lve {
 		VkCommandBuffer commandBuffer;
 		LveCamera& camera;
 		VkDescriptorSet globalDescriptorSet;
-		LveGameObject::Map& gameObject;
+		LveGameObject::Map& gameObjects;
 	};
 }

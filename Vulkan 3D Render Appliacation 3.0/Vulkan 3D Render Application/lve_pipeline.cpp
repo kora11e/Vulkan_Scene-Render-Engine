@@ -8,6 +8,10 @@
 #include <iostream>
 #include <stdexcept>
 
+#ifndef ENGINE_DIR
+#define ENGINE_DIR "../"
+#endif
+
 namespace lve {
 
     LvePipeline::LvePipeline(
@@ -26,10 +30,11 @@ namespace lve {
     }
 
     std::vector<char> LvePipeline::readFile(const std::string& filepath) {
-        std::ifstream file{ filepath, std::ios::ate | std::ios::binary };
+        std::string enginePath = ENGINE_DIR + filepath;
+        std::ifstream file{ enginePath, std::ios::ate | std::ios::binary };
 
         if (!file.is_open()) {
-            throw std::runtime_error("failed to open file: " + filepath);
+            throw std::runtime_error("failed to open file: " + enginePath);
         }
 
         size_t fileSize = static_cast<size_t>(file.tellg());
@@ -47,7 +52,7 @@ namespace lve {
         const std::string& fragFilepath,
         const PipelineConfigInfo& configInfo) {
         assert(
-            configInfo.layout != VK_NULL_HANDLE &&
+            configInfo.pipelineLayout != VK_NULL_HANDLE &&
             "Cannot create graphics pipeline: no pipelineLayout provided in configInfo");
         assert(
             configInfo.renderPass != VK_NULL_HANDLE &&
@@ -75,8 +80,8 @@ namespace lve {
         shaderStages[1].pNext = nullptr;
         shaderStages[1].pSpecializationInfo = nullptr;
 
-        auto bindingDescriptions = LveModel::Vertex::getBindingDescription();
-        auto attributeDescriptions = LveModel::Vertex::getAttributeDescription();
+        auto& bindingDescriptions = configInfo.bindingDescriptions;
+        auto& attributeDescriptions = configInfo.attributeDescriptions;
         VkPipelineVertexInputStateCreateInfo vertexInputInfo{};
         vertexInputInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO;
         vertexInputInfo.vertexAttributeDescriptionCount =
@@ -98,7 +103,7 @@ namespace lve {
         pipelineInfo.pDepthStencilState = &configInfo.depthStencilInfo;
         pipelineInfo.pDynamicState = &configInfo.dynamicStateInfo;
 
-        pipelineInfo.layout = configInfo.layout;
+        pipelineInfo.layout = configInfo.pipelineLayout;
         pipelineInfo.renderPass = configInfo.renderPass;
         pipelineInfo.subpass = configInfo.subpass;
 
@@ -200,6 +205,9 @@ namespace lve {
         configInfo.dynamicStateInfo.dynamicStateCount =
             static_cast<uint32_t>(configInfo.dynamicStateEnables.size());
         configInfo.dynamicStateInfo.flags = 0;
+
+        configInfo.bindingDescriptions = LveModel::Vertex::getBindingDescriptions();
+        configInfo.attributeDescriptions = LveModel::Vertex::getAttributeDescriptions();
     }
 
 }  // namespace lve

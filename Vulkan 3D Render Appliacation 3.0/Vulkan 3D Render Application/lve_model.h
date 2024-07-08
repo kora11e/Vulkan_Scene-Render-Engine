@@ -14,15 +14,15 @@ namespace lve {
 	class LveModel {
 	public:
 		struct Vertex {
-			glm::vec2 position{};
+			glm::vec3 position{};
 			glm::vec3 color{};
 			glm::vec3 normal{};
 			glm::vec2 uv{};
 
-			static std::vector<VkVertexInputBindingDescription> getBindingDescription();
-			static std::vector<VkVertexInputAttributeDescription> getAttributeDescription();
+			static std::vector<VkVertexInputBindingDescription> getBindingDescriptions();
+			static std::vector<VkVertexInputAttributeDescription> getAttributeDescriptions();
 
-			bool operator=(const Vertex& other) const {
+			bool operator==(const Vertex& other) const {
 				return position == other.position && color == other.color && normal == other.normal && uv == other.uv;
 			}
 		};
@@ -34,7 +34,7 @@ namespace lve {
 			void loadModel(const std::string& filepath);
 		};
 
-		LveModel(MyEngineDevice& device, const std::vector<Vertex>& vertices);
+		LveModel(MyEngineDevice& device, const LveModel::Builder& builder);
 		~LveModel();
 
 		LveModel(const LveModel&) = delete;
@@ -46,8 +46,8 @@ namespace lve {
 		void draw(VkCommandBuffer commandBuffer);
 
 	private:
-		void createVertexBuffers(const std::vector<Vertex> vertices);
-		void createIndexBuffers(const std::vector<uint32_t> indices);
+		void createVertexBuffers(const std::vector<Vertex>& vertices);
+		void createIndexBuffers(const std::vector<uint32_t>& indices);
 
 		MyEngineDevice& lveDevice;
 		

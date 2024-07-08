@@ -5,8 +5,6 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/constants.hpp>
 
-#include <cstdlib>
-#include <iostream>
 #include <stdexcept>
 #include <array>
 #include <cassert>

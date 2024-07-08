@@ -6,6 +6,7 @@
 #include "gameObject.h"
 #include "Swapchain.h"
 #include "lve_renderer.h"
+#include "lve_Descriptors.h"
 
 #include <memory>
 #include <vector>

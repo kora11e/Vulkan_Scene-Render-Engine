@@ -46,8 +46,8 @@ namespace lve {
 		void draw(VkCommandBuffer commandBuffer);
 
 	private:
-		void createVertexBuffers(const std::vector<Vertex>& vertices);
-		void createIndexBuffers(const std::vector<Vertex>& indices);
+		void createVertexBuffers(const std::vector<Vertex> vertices);
+		void createIndexBuffers(const std::vector<uint32_t> indices);
 
 		MyEngineDevice& lveDevice;
 		

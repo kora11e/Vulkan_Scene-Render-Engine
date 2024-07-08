@@ -12,13 +12,14 @@
 #include <glm/gtc/constants.hpp>
 
 namespace lve {
-	struct PushConstantData {
-		glm::mat4 modelMatrix{ 1.f };
-		glm::mat4 normalMatrix{ 1.f };
+	struct PushLightConstants {
+		glm::vec4 position{};
+		glm::vec4 color{};
+		float radius;
 	};
 
-	PointLightSystem::PointLightSystem(MyEngineDevice& device, VkRenderPass renderPass) : lveDevice{ device } {
-		createPipelineLayout();
+	PointLightSystem::PointLightSystem(MyEngineDevice& device, VkRenderPass renderPass, VkDescriptorSetLayout globalSetLayout) : lveDevice{ device } {
+		createPipelineLayout(globalSetLayout);
 		createPipeline(renderPass);
 	}
 

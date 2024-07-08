@@ -49,7 +49,7 @@ namespace lve {
 			vertexCount,
 			VK_BUFFER_USAGE_TRANSFER_SRC_BIT,
 			VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT,
-		}
+		};
 
 		stagingBuffer.map();
 		stagingBuffer.writeToBuffer((void*)vertices.data());
@@ -57,9 +57,6 @@ namespace lve {
 		vertexBuffer = std::make_unique<LveBuffer>(lveDevice, vertexSize, vertexCount, VK_BUFFER_USAGE_VERTEX_BUFFER_BIT | VK_BUFFER_USAGE_TRANSFER_DST_BIT, VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT);
 
 		lveDevice.copyBuffer(stagingBuffer.getBuffer(), vertexBuffer->getBuffer(), bufferSize);
-
-		vkDestroyBuffer(lveDevice.device(), stagingBuffer, nullptr);
-		vkFreeMemory(lveDevice.device(), stagingBufferMemory, nullptr);
 	}
 
 	void LveModel::createIndexBuffers(const std::vector<uint32_t>& indices) {
@@ -76,12 +73,12 @@ namespace lve {
 		uint32_t indexSize = sizeof(indices[0]);
 
 		LveBuffer stagingBuffer{
-			lveDevice, 
+			lveDevice,
 			indexSize,
 			indexCount,
-			VK_BUFFER_USAGE_TRANSFER_SRC_BIT, 
+			VK_BUFFER_USAGE_TRANSFER_SRC_BIT,
 			VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT
-		}
+		};
 
 		stagingBuffer.map();
 		stagingBuffer.writeToBuffer((void*) indices.data());
@@ -160,25 +157,18 @@ namespace lve {
 						attrib.vertices[3 * index.vertex_index + 1];
 						attrib.vertices[3 * index.vertex_index + 2];
 					};
+
 					vertex.color = {
 						attrib.colors[3 * index.vertex_index + 0];
 						attrib.colors[3 * index.vertex_index + 1];
 						attrib.colors[3 * index.vertex_index + 2];
 					};
 				}
-				
-				if (index.normal_index >= 0) {
-					vertex.normal = {
-						attrib.vertices[3 * index.vertex_index + 0];
-						attrib.vertices[3 * index.vertex_index + 1];
-						attrib.vertices[3 * index.vertex_index + 2];
-					}
-				}
 
 				if (index.texcoord_index >= 0) {
 					vertex.uv = {
-						attrib.vertices[2 * index.vertex_index + 0];
-						attrib.vertices[2 * index.vertex_index + 1];
+						attrib.texcoords[2 * index.vertex_index + 0],
+						attrib.texcoords[2 * index.vertex_index + 1],
 					}
 				}
 

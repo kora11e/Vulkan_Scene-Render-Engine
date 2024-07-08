@@ -22,6 +22,10 @@ namespace lve {
 		}
 	};
 
+	struct PointLightComponent {
+		float lightIntensity = 1.f;
+	};
+
 	//inefficient for bigger projects
 	class LveGameObject {
 	public:
@@ -39,12 +43,14 @@ namespace lve {
 
 		id_t getId() { return id; };
 
-		std::shared_ptr<LveModel> model{};
 		glm::vec3 color{};
 		TransformComponent transform{};
 
+		std::shared_ptr<LveModel> model{};
+		std::unique_ptr<PointLightComponent> pointLight = nullptr;
+
 	private:
 		LveGameObject(id_t objId) : id{ objId } {}
-			id_t id;
+		id_t id;
 	};
 }

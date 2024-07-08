@@ -1,5 +1,7 @@
 #include "keyboard_movement.h"
 
+#include <limits>
+
 namespace lve {
 	void keyboardMovement::moveInPlaneXZ(GLFWwindow* window, float dt, LveGameObject& gameObject) {
 		glm::vec3 rotate{ 0 };

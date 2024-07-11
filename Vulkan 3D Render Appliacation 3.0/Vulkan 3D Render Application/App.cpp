@@ -93,7 +93,7 @@ namespace lve {
                     commandBuffer,
                     camera,
                     globalDescriptorSets[frameIndex],
-                    gameObjecs };
+                    gameObjects };
 
                 // update
                 GlobalUbo ubo{};
@@ -117,26 +117,26 @@ namespace lve {
 
     void App::loadGameObjects() {
         std::shared_ptr<LveModel> lveModel =
-            LveModel::createModelFromFile(lveDevice, "./przybornik.obj");
+            LveModel::createModelFromFile(lveDevice, "models/przybornik.obj");
         auto flatVase = LveGameObject::createGameObject();
         flatVase.model = lveModel;
         flatVase.transform.translation = { -.5f, .5f, 0.f };
         flatVase.transform.scale = { 3.f, 1.5f, 3.f };
-        gameObjecs.emplace(flatVase.getId(), std::move(flatVase));
+        gameObjects.emplace(flatVase.getId(), std::move(flatVase));
 
-        lveModel = LveModel::createModelFromFile(lveDevice, "./smooth_vase.obj");
+        lveModel = LveModel::createModelFromFile(lveDevice, "models/colored_cube.obj");
         auto smoothVase = LveGameObject::createGameObject();
         smoothVase.model = lveModel;
         smoothVase.transform.translation = { .5f, .5f, 0.f };
         smoothVase.transform.scale = { 3.f, 1.5f, 3.f };
-        gameObjecs.emplace(smoothVase.getId(), std::move(smoothVase));
+        gameObjects.emplace(smoothVase.getId(), std::move(smoothVase));
 
-        lveModel = LveModel::createModelFromFile(lveDevice, "./Quad.obj");
+        lveModel = LveModel::createModelFromFile(lveDevice, "models/Quad.obj");
         auto floor = LveGameObject::createGameObject();
         floor.model = lveModel;
         floor.transform.translation = { 0.f, .5f, 0.f };
         floor.transform.scale = { 3.f, 1.f, 3.f };
-        gameObjecs.emplace(floor.getId(), std::move(floor));
+        gameObjects.emplace(floor.getId(), std::move(floor));
 
         std::vector<glm::vec3> lightColors{
             {1.f, .1f, .1f},
@@ -155,7 +155,7 @@ namespace lve {
                 (i * glm::two_pi<float>()) / lightColors.size(),
                 { 0.f, -1.f, 0.f });
             pointLight.transform.translation = glm::vec3(rotateLight * glm::vec4(-1.f, -1.f, -1.f, 1.f));
-            gameObjecs.emplace(pointLight.getId(), std::move(pointLight));
+            gameObjects.emplace(pointLight.getId(), std::move(pointLight));
         }
     }
 
